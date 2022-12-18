@@ -1,0 +1,58 @@
+.site-header {
+   position: absolute;
+   width: 100%;
+   padding: 20px 0;
+   z-index: 1;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-wrapper {
+            a {
+                img {
+                    @include adjust-width;
+                }
+            }
+        }
+
+        .menu-search-wrapper {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                .menu-list {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        padding: 0 10px;
+                        @include bullet-off;
+
+                        a {
+                            @include underline-off;
+                            font-size: 17px;
+                            text-transform: uppercase;
+                            color: $white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search-button {
+            padding-left: 20px;
+            .search-svg-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $white;
+                padding: 20px;
+                border-radius: 50%;
+                color: $white;
+            }
+        }
+    }
+}

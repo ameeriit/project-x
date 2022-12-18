@@ -12,13 +12,13 @@
 @import "./base/font";
 @import "./base/typography";
 
-/* components */
-@import "./components/footer";
-@import "./components/header";
-
 /* layout */
 @import "./layout/button";
 @import "./layout/common";
+
+/* components */
+@import "./components/footer";
+@import "./components/header";
 
 /* pages */
 @import "./pages/home/banner";
