@@ -1,0 +1,20 @@
+.how-it-works-section {
+  .how-it-works-wrapper {
+    .how-it-works-img-wrapper {
+      max-width: 100%;
+      img {
+        @include inherit-img;
+      }
+    }
+    .how-it-works-card-wrapper {
+        display: flex;
+      .how-it-works-card {
+        padding: 10px 30px;
+        background-color: $dark-cerulean;
+      }
+      .how-it-works-card-content {
+        display: flex;
+      }
+    }
+  }
+}

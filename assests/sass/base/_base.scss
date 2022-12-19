@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: $font-family-poppins;
-    font-size: 19px;
+    font-size: 14px;
     color: $black;
 }
 
@@ -9,9 +9,15 @@ h1{
     color: $white;
 }
 h2{
-    color: $dark-cerulean;
+    font-weight: 700;
 }
-
+h5{
+    font-weight: 700;
+}
+h4{
+    font-weight: 700;
+}
 p{
     color: $dim-gray;
+    line-height: 1.6;
 }

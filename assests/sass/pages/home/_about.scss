@@ -1,0 +1,51 @@
+.about-section {
+  padding-top: 75px;
+  background-color: $cultured;
+  .about-wrapper {
+    position: relative;
+    .about-us-tab-wrapper {
+      margin-bottom: 25px;
+    }
+    .tab-wrapper {
+      .common-section-heading {
+        padding-bottom: 30px;
+      }
+      .about-signature-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .signature-image {
+          max-width: 100px;
+          max-height: auto;
+          img {
+            max-width: inherit;
+            max-height: inherit;
+          }
+        }
+        .signature-content {
+          padding-left: 40px;
+          margin-top: 10px;
+          .company-position {
+            h6 {
+              color: $dim-gray;
+            }
+          }
+        }
+      }
+    }
+    .first-paragraph {
+      padding-bottom: 25px;
+    }
+  }
+  .tab-list-wrapper {
+    padding: 20px 0;
+    .nav {
+      justify-content: space-between;
+      a {
+        font-size: 14px;
+        color: $black;
+        font-weight: 700;
+      }
+    }
+  }
+}
