@@ -1,11 +1,15 @@
-.wh{
-    
-}
+.wh {}
 
-.male-bl-button{
+.male-bl-button {
     color: white;
-    font-size: 17px;
+    font-size: 11px;
+    font-weight: 700;
     background: transparent;
-    padding: 24px 60px;
-    border: 2px solid white;
+    padding: 20px 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    &:hover{
+        background-color: $cultured;
+        color: $dark-cerulean;
+      }
 }

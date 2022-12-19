@@ -1,29 +1,45 @@
 .banner-section {
-  //   background-image: url(/assests/img/article-3.jpg);
+  background-image: url(/assests/img/article-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $dim-gray;
+
   .banner-wrapper {
-    padding: 330px 0px 380px 0;
+    padding: 245px 0 125px 0;
+
     .content-wrapper {
+      margin: 0 100px;
+      max-width: 550px;
+
       .main-heading {
-        max-width: 900px;
         padding-bottom: 15px;
       }
+
       .main-heading-paragraph {
-        max-width: 750px;
         padding-bottom: 55px;
+
         p {
           color: $white;
         }
       }
+
       .main-button {
         display: inline-block;
       }
     }
-    .down-arrow {
-      margin-top: 70px;
+
+    .banner-lower-part {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 115px;
+
+      .down-arrow {}
+
+      .language {
+        display: flex;
+      }
     }
   }
 }

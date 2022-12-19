@@ -12,8 +12,22 @@
   }
 }
 
-.common-section-heading {
-}
+.common-section-heading {}
 
-.common-nav-list-heading {
+.common-nav-list-heading {}
+
+
+.lang {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  padding-left: 10px;
+  h6{
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    color: inherit;
+    margin: 0;
+  }
 }

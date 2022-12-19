@@ -2,18 +2,30 @@
   .how-it-works-wrapper {
     .how-it-works-img-wrapper {
       max-width: 100%;
+
       img {
         @include inherit-img;
       }
     }
+
     .how-it-works-card-wrapper {
-        display: flex;
-      .how-it-works-card {
-        padding: 10px 30px;
-        background-color: $dark-cerulean;
-      }
-      .how-it-works-card-content {
-        display: flex;
+      display: flex;
+      align-items: center;
+
+      .row {
+        margin: 0 -12px;
+
+        .how-it-works-main-content {
+          .common-section-heading {
+            padding-right: 15px;
+          }
+        }
+
+        .how-it-works-card-content {
+          display: flex;
+          flex-direction: column;
+          background-color: $dark-cerulean;
+        }
       }
     }
   }

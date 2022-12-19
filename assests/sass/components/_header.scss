@@ -3,10 +3,12 @@
   width: 100%;
   padding: 20px 0;
   z-index: 1;
+
   .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo-wrapper {
       a {
         img {
@@ -18,6 +20,7 @@
     .menu-search-wrapper {
       display: flex;
       align-items: center;
+
       .menu {
         @include breakpoint(medium) {
           .menu-btn div {
@@ -42,10 +45,12 @@
             z-index: 99;
           }
         }
+
         .menu-list {
           display: flex;
           margin: 0;
           padding: 0;
+
           @include breakpoint(medium) {
             display: none;
           }
@@ -56,8 +61,15 @@
           @include bullet-off;
 
           a {
+
             @include underline-off;
-            font-size: 17px;
+            font-size: 13px;
+            transition: 0.4s all;
+            &:hover {
+              color: $dark-cerulean;
+            }
+
+
             text-transform: uppercase;
             color: $white;
             font-weight: 700;
@@ -69,6 +81,7 @@
 
   .search-button {
     padding-left: 20px;
+
     .search-svg-wrapper {
       display: flex;
       align-items: center;
@@ -85,7 +98,7 @@
   display: block !important;
 }
 
-.open{
+.open {
   position: absolute;
   width: 100%;
   height: 100%;
