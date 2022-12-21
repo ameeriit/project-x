@@ -3,63 +3,92 @@
   z-index: 1;
   padding: 115px 0;
   background-color: $cultured;
+
   .common-background-blur-title {
     top: -55px;
     z-index: -1;
   }
+
   .rows {
     margin: 0 -18px;
+
     .cols {
       padding: 0 18px;
+
+      &:last-child {
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "Popular";
+          position: absolute;
+          background-color: $dark-cerulean;
+          padding: 5px 10px;
+          color: $white;
+          transform: rotate(-45deg);
+          top: 18px;
+          left: 0px;
+          font-size: 11px;
+        }
+      }
     }
   }
+
   .plans-wrapper {
     .plans-title {
       .common-section-title {
         padding-bottom: 10px;
       }
+
       .common-section-heading {
         padding-bottom: 15px;
       }
     }
-    .popular-ribbon {
-      background-color: $dark-cerulean;
-      color: $white;
-    }
+
     .plans-card-wrapper {
       height: 100%;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      position: relative;
       padding: 40px 25px;
       background-color: $white;
       text-align: center;
       .plans-card-sub-title {
         padding-bottom: 20px;
       }
+
       .plans-price {
         .best-price {
           .subscript {
+            position: relative;
+            top: -32px;
+            font-size: 18px;
+            left: -5px;
+            color: #0F4C81;
+            color: $dark-cerulean;
           }
+
           .price {
+            position: relative;
             font-size: 60px;
             font-weight: 700;
             color: $dark-cerulean;
           }
-          .superscript {
-          }
+
         }
       }
+
       .plans-services {
         padding-top: 10px;
+
         .services-list {
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid #dad7d7;
+
           &:last-child {
             border-bottom: none;
           }
         }
       }
+
       .price-plans {
         display: inline-flex;
         padding-top: 20px;

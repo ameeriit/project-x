@@ -1,48 +1,78 @@
 .how-it-works-section {
+  counter-reset: my-counter 00;
   padding-bottom: 70px;
+
   .how-it-works-wrapper {
     .how-it-works-img-wrapper {
       max-width: 100%;
+      position: relative;
+      z-index: 2;
+
       img {
         @include inherit-img;
       }
     }
+
     .how-it-works-card-wrapper {
       .row {
         margin: 0;
+
         & :nth-child(3n + 2) .how-it-works-card-content {
           background-color: $dark-cerulean;
           color: $white;
+
           p {
             color: $philippine-silver;
           }
         }
+
         & :nth-child(3n + 3) .how-it-works-card-content {
           background-color: $cultured;
         }
+
         & :nth-child(3n + 4) .how-it-works-card-content {
           background-color: $black;
           color: $white;
+
           p {
             color: $philippine-silver;
           }
         }
+
         .col-3 {
           padding: 0;
+
           .how-it-works-main-content {
             padding-right: 30px;
             height: 100%;
+
             .how-it-works-content-wrapper {
               padding: 75px 0 65px;
             }
           }
         }
+
         .col-3 {
           padding: 0;
+
           .how-it-works-card-content {
             height: 100%;
+
             .how-it-works-content-wrapper {
               padding: 100px 30px 80px;
+              position: relative;
+
+              &::before {
+                content: "0 "counter(my-counter);
+                counter-increment: my-counter 1;
+                font-size: 197px;
+                font-weight: 700;
+                position: absolute;
+                top: -88px;
+                right: -11px;
+                opacity: 0.03;
+                letter-spacing: -20px;
+              }
             }
           }
         }

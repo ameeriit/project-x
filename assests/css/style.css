@@ -12441,25 +12441,26 @@ h6 {
 .services-section {
   background-color: #F8F8F8;
 }
-.services-section .services-wrapper {
-  position: relative;
+.services-section .swiper-container .swiper-wrapper {
   bottom: 50px;
 }
-.services-section .services-wrapper .available-services {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.services-section .swiper-container .swiper-wrapper .swiper-slide {
+  padding: 35px;
+  text-align: left;
   background-color: #FFFFFF;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 35px;
 }
-.services-section .services-wrapper .available-services .available-services-img {
+.services-section .swiper-container .swiper-wrapper .swiper-slide .available-services .available-services-img {
   padding-bottom: 20px;
 }
-.services-section .services-wrapper .available-services .available-services-img img {
+.services-section .swiper-container .swiper-wrapper .swiper-slide .available-services .available-services-img img {
   width: inherit;
 }
-.services-section .services-wrapper .available-services .available-services-title {
+.services-section .swiper-container .swiper-wrapper .swiper-slide .available-services .available-servces-title {
   padding-bottom: 5px;
 }
-.services-section .services-wrapper .available-services .available-services-title h5 {
+.services-section .swiper-container .swiper-wrapper .swiper-slide .available-services .available-servces-title h5 {
   font-weight: 700;
 }
 
@@ -12521,10 +12522,13 @@ h6 {
 }
 
 .how-it-works-section {
+  counter-reset: my-counter 0;
   padding-bottom: 70px;
 }
 .how-it-works-section .how-it-works-wrapper .how-it-works-img-wrapper {
   max-width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .how-it-works-section .how-it-works-wrapper .how-it-works-img-wrapper img {
   max-width: inherit;
@@ -12568,6 +12572,18 @@ h6 {
 }
 .how-it-works-section .how-it-works-wrapper .how-it-works-card-wrapper .row .col-3 .how-it-works-card-content .how-it-works-content-wrapper {
   padding: 100px 30px 80px;
+  position: relative;
+}
+.how-it-works-section .how-it-works-wrapper .how-it-works-card-wrapper .row .col-3 .how-it-works-card-content .how-it-works-content-wrapper::before {
+  content: "0 " counter(my-counter);
+  counter-increment: my-counter 1;
+  font-size: 197px;
+  font-weight: 700;
+  position: absolute;
+  top: -88px;
+  right: -11px;
+  opacity: 0.03;
+  letter-spacing: -20px;
 }
 
 .team-section {
@@ -12594,6 +12610,9 @@ h6 {
   position: relative;
   height: 100%;
 }
+.team-section .team-wrapper .team-members-wrapper:hover .team-card-title {
+  opacity: 1;
+}
 .team-section .team-wrapper .team-members-wrapper .team-member-img {
   max-width: 100%;
   height: 100%;
@@ -12613,6 +12632,8 @@ h6 {
   padding: 12px;
   text-align: center;
   background-color: #0F4C81;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .team-section .team-wrapper .team-members-wrapper .team-card-title a {
   font-size: 14px;
@@ -12662,20 +12683,30 @@ h6 {
 .plans-section .rows .cols {
   padding: 0 18px;
 }
+.plans-section .rows .cols:last-child {
+  position: relative;
+  overflow: hidden;
+}
+.plans-section .rows .cols:last-child::before {
+  content: "Popular";
+  position: absolute;
+  background-color: #0F4C81;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 0px;
+  font-size: 11px;
+}
 .plans-section .plans-wrapper .plans-title .common-section-title {
   padding-bottom: 10px;
 }
 .plans-section .plans-wrapper .plans-title .common-section-heading {
   padding-bottom: 15px;
 }
-.plans-section .plans-wrapper .popular-ribbon {
-  background-color: #0F4C81;
-  color: #FFFFFF;
-}
 .plans-section .plans-wrapper .plans-card-wrapper {
   height: 100%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  position: relative;
   padding: 40px 25px;
   background-color: #FFFFFF;
   text-align: center;
@@ -12683,7 +12714,16 @@ h6 {
 .plans-section .plans-wrapper .plans-card-wrapper .plans-card-sub-title {
   padding-bottom: 20px;
 }
+.plans-section .plans-wrapper .plans-card-wrapper .plans-price .best-price .subscript {
+  position: relative;
+  top: -32px;
+  font-size: 18px;
+  left: -5px;
+  color: #0F4C81;
+  color: #0F4C81;
+}
 .plans-section .plans-wrapper .plans-card-wrapper .plans-price .best-price .price {
+  position: relative;
   font-size: 60px;
   font-weight: 700;
   color: #0F4C81;

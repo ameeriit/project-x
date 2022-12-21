@@ -1,23 +1,33 @@
 .services-section {
-    background-color: $cultured;
-  .services-wrapper {
-    
-    position: relative;
-    bottom: 50px;
-    .available-services {
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        background-color: $white;
+  background-color: $cultured;
+
+  .swiper-container {
+    .swiper-wrapper {
+      bottom: 50px;
+
+      .swiper-slide {
         padding: 35px;
-      .available-services-img {
-        padding-bottom: 20px;
-        img {
-          width: inherit;
-        }
-      }
-      .available-services-title {
-        padding-bottom: 5px;
-        h5 {
-          font-weight: 700;
+        text-align: left;
+        background-color: $white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 35px;
+
+        .available-services {
+          .available-services-img {
+            padding-bottom: 20px;
+
+            img {
+              width: inherit;
+            }
+          }
+
+          .available-servces-title {
+            padding-bottom: 5px;
+
+            h5 {
+              font-weight: 700;
+            }
+          }
         }
       }
     }
