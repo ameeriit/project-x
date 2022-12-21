@@ -1,9 +1,11 @@
 .services-section {
     background-color: $cultured;
   .services-wrapper {
+    
     position: relative;
     bottom: 50px;
     .available-services {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         background-color: $white;
         padding: 35px;
       .available-services-img {
@@ -17,10 +19,6 @@
         h5 {
           font-weight: 700;
         }
-      }
-      .available-services-content {
-      }
-      .available-services-arrow {
       }
     }
   }

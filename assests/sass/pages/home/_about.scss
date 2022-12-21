@@ -1,5 +1,4 @@
 .about-section {
-  
   padding-top: 60px;
   background-color: $cultured;
   .about-wrapper {
@@ -39,14 +38,23 @@
     }
   }
   .tab-list-wrapper {
-    padding: 20px 0;
+    padding: 0 0 1px;
     .nav {
-      justify-content: space-between;
+      justify-content: center;
       a {
+        padding: 35px 40px;
         font-size: 14px;
         color: $black;
         font-weight: 700;
       }
+      .nav-link{
+        border: 0;
+        border-radius: 0;
+      }
+    }
+    .nav-tabs{
+      border-top: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+      border-bottom: 0;
     }
   }
 }

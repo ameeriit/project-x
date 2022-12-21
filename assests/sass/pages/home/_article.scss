@@ -1,0 +1,31 @@
+.article-section {
+  position: relative;
+  background-color: $cultured;
+  padding: 115px 0 140px;
+  z-index: 1;
+  .common-background-blur-title {
+    top: -82px;
+    z-index: -1;
+  }
+  .article-wrapper {
+    .article-cards-wrapper {
+      .article-img {
+        height: 250px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .article-content {
+        .article-card-title {
+          font-size: 50px;
+        }
+      }
+    }
+    .article-learn-more {
+      text-align: right;
+      margin-top: 55px;
+    }
+  }
+}

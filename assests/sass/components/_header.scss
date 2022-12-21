@@ -90,6 +90,9 @@
       padding: 20px;
       border-radius: 50%;
       color: $white;
+      img{
+        filter: invert(1);
+      }
     }
   }
 }
