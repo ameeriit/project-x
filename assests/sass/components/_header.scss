@@ -81,9 +81,8 @@
 
   .search-button {
     padding-left: 20px;
-    position: static;
-
     .search-svg-wrapper {
+      
       display: flex;
       align-items: center;
       justify-content: center;
@@ -94,6 +93,16 @@
       img{
         filter: invert(1);
       }
+      .modal-body{
+        img{
+          filter: none;
+        }
+      }
+      
     }
   }
+}
+
+.modal-backdrop{
+  position: unset;
 }

@@ -12791,7 +12791,6 @@ h6 {
 }
 .site-header .search-button {
   padding-left: 20px;
-  position: static;
 }
 .site-header .search-button .search-svg-wrapper {
   display: flex;
@@ -12804,6 +12803,13 @@ h6 {
 }
 .site-header .search-button .search-svg-wrapper img {
   filter: invert(1);
+}
+.site-header .search-button .search-svg-wrapper .modal-body img {
+  filter: none;
+}
+
+.modal-backdrop {
+  position: unset;
 }
 
 /* pages */
