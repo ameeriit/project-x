@@ -4,7 +4,6 @@
   .swiper-container {
     .swiper-wrapper {
       bottom: 50px;
-
       .swiper-slide {
         padding: 35px;
         text-align: left;
@@ -26,6 +25,11 @@
 
             h5 {
               font-weight: 700;
+            }
+          }
+          .available-services-arrow{
+            img{
+              @include tr-tf;
             }
           }
         }

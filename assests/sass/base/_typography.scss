@@ -1,19 +1,52 @@
 h1{
     font-size: 57px;
+    @include breakpoint(medium){
+        font-size: 45px;
+    }
+    @include breakpoint(small){
+        font-size: 36px;
+    }
+    @include breakpoint(iPhone5){
+        font-size: 22px;
+    }
 }
 h2{
     font-size: 29px;
     line-height: 1.4;
+    @include breakpoint(medium){
+        font-size: 25px;
+    }
+    @include breakpoint(iPhone5){
+        font-size: 16px;
+    }
 }
 h3{
     font-size: 25px;
+    @include breakpoint(medium){
+        font-size: 20px;
+    }
 }
 h4{
     font-size: 20px;
+    @include breakpoint(medium){
+        font-size: 16px;
+    }
+    @include breakpoint(iPhone5){
+        font-size: 14px;
+    }
 }
 h5{
     font-size: 17px;
+    @include breakpoint(medium){
+        font-size: 14px;
+    }
 }
 h6{
     font-size: 14px;
+    @include breakpoint(medium){
+        font-size: 12px;
+    }
+    @include breakpoint(iPhone5){
+        font-size: 8px;
+    }
 }

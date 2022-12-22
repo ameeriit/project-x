@@ -15,8 +15,6 @@
 
     .how-it-works-card-wrapper {
       .row {
-        margin: 0;
-
         & :nth-child(3n + 2) .how-it-works-card-content {
           background-color: $dark-cerulean;
           color: $white;
@@ -38,45 +36,43 @@
             color: $philippine-silver;
           }
         }
+        .how-it-works-main-content {
+          padding-right: 30px;
+          height: 100%;
 
-        .col-3 {
-          padding: 0;
-
-          .how-it-works-main-content {
-            padding-right: 30px;
-            height: 100%;
-
-            .how-it-works-content-wrapper {
-              padding: 75px 0 65px;
-            }
+          .how-it-works-content-wrapper {
+            padding: 75px 0 65px;
           }
         }
+      }
+      .how-it-works-card-content {
+        height: 100%;
 
-        .col-3 {
-          padding: 0;
+        .how-it-works-content-wrapper {
+          padding: 100px 30px 80px;
+          position: relative;
+          overflow: hidden;
 
-          .how-it-works-card-content {
-            height: 100%;
-
-            .how-it-works-content-wrapper {
-              padding: 100px 30px 80px;
-              position: relative;
-
-              &::before {
-                content: "0 "counter(my-counter);
-                counter-increment: my-counter 1;
-                font-size: 197px;
-                font-weight: 700;
-                position: absolute;
-                top: -88px;
-                right: -11px;
-                opacity: 0.03;
-                letter-spacing: -20px;
-              }
-            }
+          &::before {
+            content: "0" counter(my-counter);
+            counter-increment: my-counter 1;
+            font-size: 197px;
+            font-weight: 700;
+            position: absolute;
+            top: -88px;
+            right: -11px;
+            opacity: 0.03;
           }
         }
       }
     }
+  }
+}
+
+.rows {
+  margin: 0;
+
+  .cols {
+    padding: 0;
   }
 }

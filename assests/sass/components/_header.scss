@@ -3,6 +3,7 @@
   width: 100%;
   padding: 20px 0;
   z-index: 1;
+  margin: 0 -2px;
 
   .header-wrapper {
     display: flex;
@@ -61,14 +62,12 @@
           @include bullet-off;
 
           a {
-
             @include underline-off;
             font-size: 13px;
             transition: 0.4s all;
             &:hover {
               color: $dark-cerulean;
             }
-
 
             text-transform: uppercase;
             color: $white;
@@ -82,27 +81,55 @@
   .search-button {
     padding-left: 20px;
     .search-svg-wrapper {
-      
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid $white;
-      padding: 20px;
-      border-radius: 50%;
-      color: $white;
-      img{
+      a {
+        @include tr-sc;
+      }
+      img {
         filter: invert(1);
       }
-      .modal-body{
-        img{
-          filter: none;
+      .modal {
+        border-color: none;
+        .modal-content {
+          background-color: $black;
+          .modal-header {
+            a {
+              filter: invert(1);
+            }
+          }
+          .modal-body {
+            .input-group {
+              display: unset;
+              img {
+                filter: none;
+              }
+              .form-outline {
+                display: flex;
+                align-items: center;
+                padding: 250px;
+                input {
+                  margin-right: 10px;
+                }
+                a {
+                  padding: 8px;
+                  border: 1px solid #ffffff;
+                  max-width: 30px;
+                  transition: all 0.2s ease-in-out;
+                  &:hover {
+                    transform: scale(1.2);
+                  }
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
         }
       }
-      
     }
   }
 }
 
-.modal-backdrop{
+.modal-backdrop {
   position: unset;
 }

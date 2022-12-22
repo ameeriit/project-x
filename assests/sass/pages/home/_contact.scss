@@ -14,8 +14,16 @@
     }
     .rows {
       margin: 0 -18px;
+      @include breakpoint(medium) {
+        margin-bottom: -60px;
+      }
+      @include breakpoint(smaller) {
+        justify-content: center;
+        margin: 0 0;
+      }
       .cols {
         padding: 0 18px;
+        margin: 0 0 30px;
       }
     }
     .contact-card-wrapper {
@@ -25,6 +33,11 @@
       padding: 30px 35px;
       .contact-img-wrapper {
         padding-bottom: 18px;
+        img {
+          @include breakpoint(iPhone5) {
+            max-width: 35px;
+          }
+        }
       }
       .contact-card-title {
         padding-bottom: 5px;
@@ -32,6 +45,7 @@
       .contact-card-details {
         line-break: auto;
         a {
+          color: $dim-gray;
           text-decoration: none;
         }
       }

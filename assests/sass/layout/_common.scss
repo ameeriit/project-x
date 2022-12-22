@@ -4,6 +4,18 @@
 
 .container {
   max-width: 1200px;
+  @include breakpoint(wide) {
+    max-width: 1050px;
+  }
+  @include breakpoint(medium){
+    max-width: 700px;
+  }
+  @include breakpoint(small){
+    max-width: 535px;
+  }
+  @include breakpoint(smaller){
+    max-width: 500px;
+  }
 }
 
 .common-section-title {
@@ -40,3 +52,36 @@
   }
 }
 
+/* search button */
+.sr-bl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  padding: 20px;
+  border-radius: 50%;
+  color: $white;
+}
+
+.op {
+  opacity: 0.5;
+}
+
+/* popular wrapper */
+
+.popular {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "Popular";
+    position: absolute;
+    font-weight: 700;
+    top: 22px;
+    left: -35px;
+    background: #0f4c81;
+    padding: 8px 50px;
+    font-size: 11px;
+    color: $white;
+    transform: rotate(-45deg);
+  }
+}

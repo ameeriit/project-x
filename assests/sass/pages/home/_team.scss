@@ -1,8 +1,11 @@
 .team-section {
   padding-top: 45px;
-  padding-bottom: 255px;
+  padding-bottom: 110px;
   position: relative;
   z-index: 1;
+  @include breakpoint(medium) {
+    padding-bottom: 50px;
+  }
 
   .common-background-blur-title {
     position: absolute;
@@ -24,6 +27,17 @@
       }
     }
 
+    .rows {
+      margin: 0 -18px;
+      @include breakpoint(smaller) {
+        justify-content: center;
+        margin: 0 0;
+      }
+      .cols {
+        padding: 0 18px;
+        margin: 0 0 30px;
+      }
+    }
     .team-members-wrapper {
       position: relative;
       height: 100%;
@@ -34,7 +48,6 @@
 
       .team-member-img {
         max-width: 100%;
-        height: 100%;
 
         img {
           max-width: 100%;
@@ -46,7 +59,7 @@
       .team-card-title {
         position: absolute;
         width: 100%;
-        bottom: 20px;
+        bottom: 174px;
         left: 20px;
         max-width: 160px;
         padding: 12px;
