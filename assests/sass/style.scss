@@ -18,18 +18,18 @@
 @import "./layout/common";
 
 /* components */
-@import "./components/footer";
-@import "./components/header";
+@import "./components/1header";
+@import "./components/13-footer";
 
 /* pages */
-@import "./pages/home/banner";
-@import "./pages/home/services";
-@import "./pages/home/about";
-@import "./pages/home/how-it-works";
-@import "./pages/home/team";
-@import "./pages/home/plans";
-@import "./pages/home/brands";
-@import "./pages/home/video";
-@import "./pages/home/testomonials";
-@import "./pages/home/article";
-@import "./pages/home/contact";
+@import "./pages/home/2-banner";
+@import "./pages/home/3-services";
+@import "./pages/home/4-about";
+@import "./pages/home/5-how-it-works";
+@import "./pages/home/6-team";
+@import "./pages/home/7-plans";
+@import "./pages/home/8-brands";
+@import "./pages/home/9-video";
+@import "./pages/home/10-testomonials";
+@import "./pages/home/11-article";
+@import "./pages/home/12-contact";

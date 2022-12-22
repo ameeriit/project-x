@@ -1,58 +1,59 @@
 .about-section {
   padding-top: 60px;
   background-color: $cultured;
+
   .about-wrapper {
     position: relative;
-    .about-us-tab-wrapper {
+
+    .about-tab-wrapper {
       margin-bottom: 25px;
     }
+
     .tab-wrapper {
       .common-section-heading {
         padding-bottom: 30px;
       }
+
       .about-signature-box {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        .signature-image {
+        img {
           max-width: 100px;
           max-height: auto;
-          img {
-            max-width: inherit;
-            max-height: inherit;
-          }
         }
         .signature-content {
           padding-left: 40px;
           margin-top: 10px;
-          .company-position {
-            h6 {
-              color: $dim-gray;
-            }
+          .designation-of-company {
+            color: $dim-gray;
           }
         }
       }
     }
-    .first-paragraph {
-      padding-bottom: 25px;
-    }
   }
+
   .tab-list-wrapper {
     padding: 0 0 1px;
+
     .nav {
       justify-content: center;
+
       a {
+        cursor: pointer;
         padding: 35px 40px;
         font-size: 14px;
         color: $black;
         font-weight: 700;
       }
-      .nav-link{
+
+      .nav-link {
         border: 0;
         border-radius: 0;
       }
     }
-    .nav-tabs{
+
+    .nav-tabs {
       border-top: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
       border-bottom: 0;
     }

@@ -1,0 +1,85 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1;
+  margin: 0 -2px;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-wrapper {
+      a {
+        img {
+          @include adjust-width;
+        }
+      }
+    }
+
+    .menu-wrapper {
+      display: flex;
+      align-items: center;
+
+      .search-bar {
+        padding-left: 20px;
+
+        .search-img {
+          a {
+            @include tr-sc;
+            img{
+              width: 15px;
+            }
+          }
+
+          .modal {
+            border-color: none;
+
+            .modal-content {
+              background-color: $black;
+
+              .modal-header {
+                a {
+                  filter: invert(1);
+                }
+              }
+
+              .modal-body {
+                .input-group {
+                  display: unset;
+                  .form-outline {
+                    display: flex;
+                    align-items: center;
+                    padding: 250px;
+                    input {
+                      margin-right: 10px;
+                    }
+
+                    a {
+                      padding: 8px;
+                      border: 1px solid $white;
+                      max-width: 30px;
+                      transition: all 0.2s ease-in-out;
+
+                      &:hover {
+                        @include tr-sc;
+                      }
+                      img {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  position: unset;
+}

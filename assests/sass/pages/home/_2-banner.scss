@@ -1,10 +1,4 @@
 .banner-section {
-  // background-image: url(/assests/img/article-3.jpg);
-  // background-color: grey;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-color: $dim-gray;
   position: relative;
   width: 100%;
   height: 100%;
@@ -27,35 +21,25 @@
     width: 100%;
     height: 100%;
     padding: 245px 0 125px 0;
-    .content-wrapper {
+    .banner-content {
       margin: 0 100px;
       max-width: 550px;
 
-      .main-heading {
+      h1 {
         padding-bottom: 15px;
       }
 
-      .main-heading-paragraph {
+      p {
         padding-bottom: 55px;
-
-        p {
-          color: $white;
-        }
-      }
-
-      .main-button {
-        display: inline-block;
+        color: $white;
       }
     }
 
-    .banner-lower-part {
+    .banner-utility {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       margin-top: 115px;
-      .language {
-        display: flex;
-      }
     }
   }
 }

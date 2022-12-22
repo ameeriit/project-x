@@ -4,6 +4,7 @@
   .swiper-container {
     .swiper-wrapper {
       bottom: 50px;
+
       .swiper-slide {
         padding: 35px;
         text-align: left;
@@ -11,27 +12,19 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 35px;
 
-        .available-services {
-          .available-services-img {
+        .feature-services {
+          img {
             padding-bottom: 20px;
-
-            img {
-              width: inherit;
-            }
+            width: inherit;
           }
-
-          .available-servces-title {
+          h5 {
             padding-bottom: 5px;
+            font-weight: 700;
+          }
+          .slide-arrow-x {
+            @include tr-tf;
+          }
 
-            h5 {
-              font-weight: 700;
-            }
-          }
-          .available-services-arrow{
-            img{
-              @include tr-tf;
-            }
-          }
         }
       }
     }

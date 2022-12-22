@@ -176,14 +176,10 @@
   }
 }
 
-@mixin tr-sc {
-  
-}
-
 /* transition transform x */
 @mixin tr-tf {
   transition: 0.3s ease-in-out;
   &:hover {
-    transform: translateX(50px);
+    transform: translateX(10px);
   }
 }

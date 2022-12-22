@@ -1,35 +1,39 @@
 .site-footer {
   background-color: $black;
   padding: 45px 0;
+
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     .footer-logo {
       img {
         max-width: 90px;
       }
     }
-    .footer-content {
-      p {
-        font-size: 13px;
-        color: $white;
-        margin: 0;
-        
-      }
+
+    p {
+      font-size: 13px;
+      color: $white;
+      margin: 0;
+
     }
+
     .footer-media-icons {
       .social-media-icons-list {
         display: flex;
         padding: 0;
         margin: 0;
+
         li {
           padding-left: 30px;
           list-style-type: none;
+
           a {
             display: block;
             height: 16px;
+
             img {
               width: 100%;
               height: 100%;

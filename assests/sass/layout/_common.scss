@@ -7,11 +7,9 @@
 }
 
 .common-section-title {
-  h6 {
     font-weight: 700;
     text-transform: uppercase;
     color: $dark-cerulean;
-  }
 }
 
 .lang {
@@ -20,13 +18,8 @@
   text-transform: uppercase;
   color: $white;
   padding-left: 10px;
-  h6 {
-    font-size: inherit;
-    font-weight: inherit;
-    text-transform: inherit;
-    color: inherit;
-    margin: 0;
-  }
+  display: inline;
+  margin: 0;
 }
 
 .common-background-blur-title {
