@@ -81,6 +81,7 @@
 
   .search-button {
     padding-left: 20px;
+    position: static;
 
     .search-svg-wrapper {
       display: flex;
@@ -95,15 +96,4 @@
       }
     }
   }
-}
-
-.expand {
-  display: block !important;
-}
-
-.open {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
 }

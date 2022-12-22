@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-X | Home</title>
     <link rel="stylesheet" href="/assests/css/style.css">
-
 </head>
 
 <body>
@@ -39,6 +38,30 @@
                         <div class="search-svg-wrapper">
                             <img src="/assests/img/search.svg" alt="">
                         </div><!-- search button -->
+
+<!-- Button trigger modal -->
+<a data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
                     </div><!-- search-svg-wrapper -->
                 </div><!-- menu -->
             </div><!-- header-wrapper -->
@@ -644,8 +667,8 @@
                                 <h6>This is Basic Plan.</h6>
                             </div>
                             <div class="plans-price">
-                                <div class="best-price"><sup class="subscript">$</sup><span
-                                        class="price">79</span><span class="superscript
+                                <div class="best-price"><sup class="subscript">$</sup><span class="price">79</span><span
+                                        class="superscript
                                     ">/MONTHLY</span></div>
                             </div>
                             <div class="plans-services">
@@ -778,11 +801,17 @@
     </section><!-- brands section -->
 
     <section class="video-section">
-        <div class="video-wrapper">
-            <div class="video-wallpaper-wrapper">
-                <img src="/assests/img/article-3.jpg" alt="">
-            </div>
-        </div><!-- video wrapper -->
+        <div class="container">
+            <div class="video-wrapper">
+                <div class="video-img-background">
+                    <img src="/assests/img/article-9.jpg" alt="">
+                    <div class="magnific-popup-button">
+                        <a class="popup-youtube" href="/assests/img/big_buck_bunny_720p_1mb.mp4"><img src="/assests/img/Play-button.png" alt=""></a><br>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- video wrapper -->
+        </div>
     </section><!-- video section -->
 
     <section class="testomonials-section">
@@ -1029,6 +1058,7 @@
     <script src="/assests/js/vendor/bootstrap-proper.js"></script>
     <script src="/assests/js/vendor/slick.js"></script>
     <script src="/assests/js/vendor/swiper.js"></script>
+    <script src="/assests/js/vendor/magnific-popup.js"></script>
     <script src="/assests/js/common/main.js"></script>
 
 
