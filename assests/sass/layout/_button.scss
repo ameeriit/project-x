@@ -6,9 +6,6 @@
   padding: 18px 40px;
   border: 1px solid $white;
   text-decoration: none;
-  @include breakpoint(small){
-    padding: 9px 20px;
-  }
   &:hover {
     color: $cultured;
     background-color: $dark-cerulean;

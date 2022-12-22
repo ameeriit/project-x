@@ -30,9 +30,6 @@
     .content-wrapper {
       margin: 0 100px;
       max-width: 550px;
-      @include breakpoint(medium) {
-        margin: 0 60px;
-      }
 
       .main-heading {
         padding-bottom: 15px;
@@ -56,10 +53,6 @@
       align-items: flex-end;
       justify-content: space-between;
       margin-top: 115px;
-
-      .down-arrow {
-      }
-
       .language {
         display: flex;
       }

@@ -18,9 +18,6 @@
       
       a{
         img{
-          @include breakpoint(iPhone5){
-            max-width: 60px;
-          }
           
         }
       }

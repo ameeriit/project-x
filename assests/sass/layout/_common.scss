@@ -4,18 +4,6 @@
 
 .container {
   max-width: 1200px;
-  @include breakpoint(wide) {
-    max-width: 1050px;
-  }
-  @include breakpoint(medium){
-    max-width: 700px;
-  }
-  @include breakpoint(small){
-    max-width: 535px;
-  }
-  @include breakpoint(smaller){
-    max-width: 500px;
-  }
 }
 
 .common-section-title {

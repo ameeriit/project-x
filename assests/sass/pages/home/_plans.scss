@@ -3,9 +3,6 @@
   z-index: 1;
   padding: 115px 0;
   background-color: $cultured;
-  @include breakpoint(medium){
-    padding-bottom: 55px;
-  }
   .common-background-blur-title {
     top: -55px;
     z-index: -1;
@@ -13,10 +10,6 @@
 
   .rows {
     margin: 0 -18px;
-    @include breakpoint(smaller) {
-      justify-content: center;
-      margin: 0 0;
-    }
 
     .cols {
       padding: 0 18px;
@@ -61,9 +54,6 @@
             font-size: 60px;
             font-weight: 700;
             color: $dark-cerulean;
-            @include breakpoint(iPhone5){
-              font-size: 50px;
-            }
           }
         }
       }
