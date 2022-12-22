@@ -12595,18 +12595,6 @@ body {
   font-family: "Poppins";
   font-size: 14px;
   color: #060606;
-  /* Large Devices, Wide Screens */
-  /* Large Devices, Wide Screens */
-}
-@media (max-width: 991px) {
-  body {
-    font-size: 12px;
-  }
-}
-@media (max-width: 374px) {
-  body {
-    font-size: 10px;
-  }
 }
 
 h1 {
