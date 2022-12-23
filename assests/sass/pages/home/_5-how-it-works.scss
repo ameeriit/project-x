@@ -12,67 +12,68 @@
         @include inherit-img;
       }
     }
+    .rows {
+      margin: 0;
+    }
+    .cols {
+      padding: 0;
+    }
+  }
+}
 
-    .how-it-works-card-wrapper {
-      .row {
-        & :nth-child(3n + 2) .how-it-works-card-content {
-          background-color: $dark-cerulean;
-          color: $white;
 
-          p {
-            color: $philippine-silver;
-          }
-        }
+.how-it-works-card-wrapper {
+  .row {
+    & :nth-child(3n + 2) .how-it-works-card-content {
+      background-color: $dark-cerulean;
+      color: $white;
 
-        & :nth-child(3n + 3) .how-it-works-card-content {
-          background-color: $cultured;
-        }
-
-        & :nth-child(3n + 4) .how-it-works-card-content {
-          background-color: $black;
-          color: $white;
-
-          p {
-            color: $philippine-silver;
-          }
-        }
-        .how-it-works-main-content {
-          padding-right: 30px;
-          height: 100%;
-
-          .how-it-works-content-wrapper {
-            padding: 75px 0 65px;
-          }
-        }
+      p {
+        color: $philippine-silver;
       }
-      .how-it-works-card-content {
-        height: 100%;
+    }
 
-        .how-it-works-content-wrapper {
-          padding: 100px 30px 80px;
-          position: relative;
-          overflow: hidden;
+    & :nth-child(3n + 3) .how-it-works-card-content {
+      background-color: $cultured;
+    }
 
-          &::before {
-            content: "0" counter(my-counter);
-            counter-increment: my-counter 1;
-            font-size: 197px;
-            font-weight: 700;
-            position: absolute;
-            top: -88px;
-            right: -11px;
-            opacity: 0.03;
-          }
-        }
+    & :nth-child(3n + 4) .how-it-works-card-content {
+      background-color: $black;
+      color: $white;
+
+      p {
+        color: $philippine-silver;
+      }
+    }
+    .how-it-works-main-content {
+      padding-right: 30px;
+      height: 100%;
+
+      .how-it-works-content-wrapper {
+        padding: 75px 0 65px;
+      }
+    }
+  }
+  .how-it-works-card-content {
+    height: 100%;
+
+    .how-it-works-content-wrapper {
+      padding: 100px 30px 80px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "0" counter(my-counter);
+        counter-increment: my-counter 1;
+        font-size: 197px;
+        font-weight: 700;
+        position: absolute;
+        top: -88px;
+        right: -11px;
+        opacity: 0.03;
       }
     }
   }
 }
 
-.rows {
-  margin: 0;
 
-  .cols {
-    padding: 0;
-  }
-}

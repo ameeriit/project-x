@@ -183,3 +183,11 @@
     transform: translateX(10px);
   }
 }
+
+/* transform bottom */
+@mixin tr-tf-bt {
+  transition: 0.3s ease-in-out;
+  &:hover{
+    transform: translateY(10px);
+  }
+}

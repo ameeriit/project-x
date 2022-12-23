@@ -14,7 +14,7 @@
     }
 
     .rows {
-      margin: 0 -18px;
+      margin: 0;
 
       .cols {
         padding: 0 18px;
@@ -80,8 +80,6 @@
         padding-bottom: 20px;
       }
 
-
-
       .field {
         width: 100%;
         padding: 20px;
@@ -105,6 +103,9 @@
       display: block;
       width: fit-content;
       margin-left: auto;
+    }
+    img{
+      @include tr-sc;
     }
   }
 

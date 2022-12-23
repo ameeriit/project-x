@@ -2,29 +2,31 @@
   background-color: $cultured;
 
   .swiper-container {
-    .swiper-wrapper {
-      bottom: 50px;
+    margin-top: -50px;
+  }
+  .swiper-wrapper {
+    
+    .swiper-slide {
+      padding: 35px;
+      text-align: left;
+      background-color: $white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      
 
-      .swiper-slide {
-        padding: 35px;
-        text-align: left;
-        background-color: $white;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 35px;
-
-        .feature-services {
+      .feature-services {
+       
+        img {
+          padding-bottom: 20px;
+          width: inherit;
+        }
+        h5 {
+          padding-bottom: 5px;
+          font-weight: 700;
+        }
+        .slide-arrow-x {
           img {
-            padding-bottom: 20px;
-            width: inherit;
-          }
-          h5 {
-            padding-bottom: 5px;
-            font-weight: 700;
-          }
-          .slide-arrow-x {
             @include tr-tf;
           }
-
         }
       }
     }

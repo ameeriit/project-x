@@ -1,0 +1,59 @@
+.services-page {
+  background-color: $cultured;
+  /* site header */
+  .site-header {
+    position: relative;
+    .header-wrapper {
+      .logo-wrapper {
+        a {
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+      .menu-wrapper {
+        .menu-bar {
+          a {
+            color: $black;
+          }
+        }
+        .search-bar {
+          .sr-bl {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
+  /* video section */
+  .service-section {
+    .service-heading {
+      max-width: 750px;
+      padding: 75px 90px;
+      h2 {
+        font-size: 57px;
+      }
+    }
+    .common-background-blur-title {
+      top: 0px;
+      right: 110px;
+    }
+    background-color: $white;
+    .rows {
+      margin: 0;
+    }
+    .cols {
+      padding: 0;
+    }
+  }
+  /* pricing section */
+  .brands-section {
+    background-color: $white;
+    position: relative;
+    a {
+      position: absolute;
+      bottom: 30px;
+      right: 140px;
+    }
+  }
+}
