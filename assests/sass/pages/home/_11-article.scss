@@ -18,27 +18,5 @@
     }
   }
 
-  .article-wrapper {
-    .article-cards {
-      .article-img {
-        height: 250px;
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
-      }
-
-      .article-arrow {
-        img {
-          @include tr-tf;
-        }
-      }
-    }
-    .lr-more {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    }
-  }
+  
 }

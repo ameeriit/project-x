@@ -67,4 +67,19 @@
   }
 }
 
+/* class form field */
+.field {
+  width: 100%;
+  padding: 20px;
+  background-color: $cultured;
+  border: none;
+  margin-bottom: 20px;
 
+  &:focus {
+    outline: none;
+  }
+}
+
+.bg-wh {
+  background-color: $white;
+}
