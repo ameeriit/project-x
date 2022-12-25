@@ -12,68 +12,72 @@
         @include inherit-img;
       }
     }
+  }
+
+
+
+  .how-it-works-card-wrapper {
     .rows {
       margin: 0;
-    }
-    .cols {
-      padding: 0;
-    }
-  }
-}
 
-
-.how-it-works-card-wrapper {
-  .row {
-    & :nth-child(3n + 2) .how-it-works-card-content {
-      background-color: $dark-cerulean;
-      color: $white;
-
-      p {
-        color: $philippine-silver;
+      .cols {
+        padding: 0;
       }
     }
 
-    & :nth-child(3n + 3) .how-it-works-card-content {
-      background-color: $cultured;
-    }
+    .row {
+      & :nth-child(3n + 2) .how-it-works-card-content {
+        background-color: $dark-cerulean;
+        color: $white;
 
-    & :nth-child(3n + 4) .how-it-works-card-content {
-      background-color: $black;
-      color: $white;
+        p {
+          color: $philippine-silver;
+        }
+      }
 
-      p {
-        color: $philippine-silver;
+      & :nth-child(3n + 3) .how-it-works-card-content {
+        background-color: $cultured;
+      }
+
+      & :nth-child(3n + 4) .how-it-works-card-content {
+        background-color: $black;
+        color: $white;
+
+        p {
+          color: $philippine-silver;
+        }
+      }
+
+      .how-it-works-main-content {
+        padding-right: 30px;
+        height: 100%;
+
+        .how-it-works-content-wrapper {
+          padding: 75px 0 30px;
+        }
       }
     }
-    .how-it-works-main-content {
-      padding-right: 30px;
+
+    .how-it-works-card-content {
       height: 100%;
 
       .how-it-works-content-wrapper {
-        padding: 75px 0 65px;
+        padding: 100px 30px 80px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: "0"counter(my-counter);
+          counter-increment: my-counter 1;
+          font-size: 197px;
+          font-weight: 700;
+          position: absolute;
+          top: -88px;
+          right: -35px;
+          opacity: 0.06;
+        }
       }
     }
   }
-  .how-it-works-card-content {
-    height: 100%;
 
-    .how-it-works-content-wrapper {
-      padding: 100px 30px 80px;
-      position: relative;
-      overflow: hidden;
-
-      &::before {
-        content: "0" counter(my-counter);
-        counter-increment: my-counter 1;
-        font-size: 197px;
-        font-weight: 700;
-        position: absolute;
-        top: -88px;
-        right: -11px;
-        opacity: 0.06;
-      }
-    }
-  }
 }
-
-

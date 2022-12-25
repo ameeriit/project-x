@@ -1,33 +1,7 @@
 .blog {
     background-color: $cultured;
 
-    .site-header {
-        position: relative;
-
-        .header-wrapper {
-            .logo-wrapper {
-                a {
-                    img {
-                        filter: invert(1);
-                    }
-                }
-            }
-
-            .menu-wrapper {
-                .menu-bar {
-                    a {
-                        color: $black;
-                    }
-                }
-
-                .search-bar {
-                    .sr-bl {
-                        filter: invert(1);
-                    }
-                }
-            }
-        }
-    }
+    
     .blog-single{
         .news-wrapper{
             .mr-blog-bottom{

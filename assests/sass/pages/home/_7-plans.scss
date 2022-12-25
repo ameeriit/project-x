@@ -1,7 +1,7 @@
 .pricing-section {
   position: relative;
   z-index: 1;
-  
+
   padding: 115px 0 95px;
 
   background-color: $cultured;
@@ -11,26 +11,17 @@
     z-index: -1;
   }
 
-  .rows {
-    margin: 0;
-
-    .cols {
-      padding: 0 18px;
-      margin: 0 0 30px;
-    }
-  }
-  .mr-plan {
-    margin: 0 -18px;
-  }
-  .pd-plan{
-    padding: 0 18px;
-  }
-
   .pricing-wrapper {
     .common-section-title {
       padding-bottom: 10px;
     }
 
+    .rows {
+      margin: 0 -18px;
+      .cols {
+        padding: 0 18px;
+      }
+    }
 
     .pricing-card {
       height: 100%;
@@ -46,7 +37,7 @@
 
       h6 {
         color: $dim-gray;
-        
+
       }
 
       .price {

@@ -2,28 +2,7 @@
   background-color: $cultured;
   /* site header */
   .site-header {
-    position: relative;
-    .header-wrapper {
-      .logo-wrapper {
-        a {
-          img {
-            filter: invert(1);
-          }
-        }
-      }
-      .menu-wrapper {
-        .menu-bar {
-          a {
-            color: $black;
-          }
-        }
-        .search-bar {
-          .sr-bl {
-            filter: invert(1);
-          }
-        }
-      }
-    }
+    background: $white;
   }
   /* video section */
   .service-section {
@@ -39,12 +18,6 @@
       right: 110px;
     }
     background-color: $white;
-    .rows {
-      margin: 0;
-    }
-    .cols {
-      padding: 0;
-    }
   }
   /* pricing section */
   .brands-section {
