@@ -28,5 +28,18 @@
             }
         }
     }
+    .blog-single{
+        .news-wrapper{
+            .mr-blog-bottom{
+                padding-bottom: 115px;
+            }
+            .article-cards{
+            margin-bottom: 50px;
+            }
+            a{
+                display: inline-block;
+            }
+        }
+    }
     
 }

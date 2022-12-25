@@ -83,3 +83,12 @@
 .bg-wh {
   background-color: $white;
 }
+
+/* rows and col adjustments */
+.rows {
+  margin: 0;
+
+  .cols {
+    padding: 0 18px;
+  }
+}

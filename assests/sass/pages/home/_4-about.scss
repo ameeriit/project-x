@@ -1,32 +1,45 @@
 .about-section {
-  padding-top: 60px;
   background-color: $cultured;
 
   .about-wrapper {
     position: relative;
 
     .about-tab-wrapper {
-      margin-bottom: 25px;
-    }
+      margin-bottom: 15px;
 
-    .tab-wrapper {
-      .common-section-heading {
-        padding-bottom: 30px;
-      }
-
-      .about-signature-box {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        img {
-          max-width: 100px;
-          max-height: auto;
+      .tab-wrapper {
+        h2{
+          padding-bottom: 24px;
         }
-        .signature-content {
-          padding-left: 40px;
-          margin-top: 10px;
-          .designation-of-company {
-            color: $dim-gray;
+        .common-section-heading {
+          padding-bottom: 30px;
+        }
+
+        .about-signature-box {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          img {
+            max-width: 100px;
+            max-height: auto;
+          }
+
+          .signature-content {
+            padding-left: 40px;
+            margin-top: 10px;
+
+            .designation-of-company {
+              color: $dim-gray;
+            }
+          }
+        }
+      }
+      .about-paragraph{
+        p{
+          padding-bottom: 15px;
+          &:last-child{
+            padding-bottom: 0;
           }
         }
       }
@@ -59,3 +72,4 @@
     }
   }
 }
+

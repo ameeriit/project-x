@@ -1,32 +1,63 @@
 .services-section {
   background-color: $cultured;
+  padding-bottom: 115px;
 
   .swiper-container {
     margin-top: -50px;
   }
+
   .swiper-wrapper {
-    
+
     .swiper-slide {
       padding: 35px;
       text-align: left;
       background-color: $white;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      
+      margin-right: 35px !important;
+
 
       .feature-services {
-       
-        img {
-          padding-bottom: 20px;
-          width: inherit;
+        height: 100%;
+
+        .service-img {
+          padding-bottom: 10px;
         }
+
         h5 {
-          padding-bottom: 5px;
+          padding-bottom: 8px;
           font-weight: 700;
         }
-        .slide-arrow-x {
-          img {
-            @include tr-tf;
+
+        p {
+          padding-bottom: 2px;
+          line-height: 1.7;
+        }
+
+        .service-bottom {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .read-more-arrow {
+            padding-right: 10px;
           }
+        }
+
+        .read-more {
+          position: absolute;
+          left: 50px;
+          text-decoration: none;
+          color: $black;
+          text-transform: uppercase;
+          font-weight: 700;
+          &:hover{
+            color: $dark-cerulean
+          }
+        
+        }
+
+        img {
+          @include tr-tf;
         }
       }
     }

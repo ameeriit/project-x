@@ -1,8 +1,10 @@
 .about-page {
   background-color: $cultured;
+
   /* site header */
   .site-header {
     position: relative;
+
     .header-wrapper {
       .logo-wrapper {
         a {
@@ -11,12 +13,14 @@
           }
         }
       }
+
       .menu-wrapper {
         .menu-bar {
           a {
             color: $black;
           }
         }
+
         .search-bar {
           .sr-bl {
             filter: invert(1);
@@ -25,19 +29,23 @@
       }
     }
   }
+
   /* site header */
   .about-banner {
     position: relative;
+
     h2 {
       padding: 85px 75px;
       font-size: 57px;
       color: $black;
       font-family: 700;
     }
+
     .common-background-blur-title {
       top: -100px;
       right: 120px;
     }
+
     .about-page-img-wrapper {
       img {
         width: 100%;
@@ -46,13 +54,20 @@
       }
     }
   }
+
+  .about-section {
+    padding: 115px 0;
+  }
+
   /* team section */
   .team-section {
     background-color: $white;
     padding-top: 115px;
+
     .common-background-blur-title {
       top: -50px;
     }
+
     .team-wrapper {
       h2 {
         max-width: 450px;

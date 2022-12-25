@@ -1,7 +1,9 @@
 .pricing-section {
   position: relative;
   z-index: 1;
-  padding: 115px 0;
+  
+  padding: 115px 0 95px;
+
   background-color: $cultured;
 
   .common-background-blur-title {
@@ -17,14 +19,16 @@
       margin: 0 0 30px;
     }
   }
+  .mr-plan {
+    margin: 0 -18px;
+  }
+  .pd-plan{
+    padding: 0 18px;
+  }
 
   .pricing-wrapper {
     .common-section-title {
       padding-bottom: 10px;
-    }
-
-    h2 {
-      padding-bottom: 15px;
     }
 
 
@@ -35,46 +39,59 @@
       background-color: $white;
       text-align: center;
       @include tr-sc;
+
+      h4 {
+        padding-bottom: 2px;
+      }
+
       h6 {
-        padding-bottom: 20px;
+        color: $dim-gray;
+        
       }
 
       .price {
-        .subscript {
-          position: relative;
-          top: -32px;
-          font-size: 18px;
-          left: -5px;
-          color: #0f4c81;
-          color: $dark-cerulean;
-        }
-
-        .rate {
-          position: relative;
-          font-size: 60px;
-          font-weight: 700;
-          color: $dark-cerulean;
-        }
+        padding-bottom: 25px;
       }
 
-      .price-plans {
-        ul {
-          list-style-type: none;
-          padding: 0;
+      .subscript {
+        position: relative;
+        top: -32px;
+        font-size: 18px;
+        left: -5px;
+        color: #0f4c81;
+        color: $dark-cerulean;
+      }
 
-          li {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #dad7d7;
-            margin-bottom: 20px;
+      .rate {
+        position: relative;
+        font-size: 60px;
+        font-weight: 700;
+        color: $dark-cerulean;
+      }
+    }
 
-            &:last-child {
-              border-bottom: none;
-              margin-bottom: 60px;
-            }
+    .price-plans {
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #dad7d7;
+          padding: 12px 0;
+
+          &:last-child {
+            border-bottom: none;
+            margin-bottom: 30px;
           }
         }
       }
+    }
+
+    a {
+
+      display: inline-block;
     }
   }
 }
