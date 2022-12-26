@@ -3,13 +3,13 @@
   /* site header */
   .site-header {
     background: $white;
-    position: unset;
+   
   }
   /* video section */
   .service-section {
     .service-heading {
       max-width: 750px;
-      padding: 75px 90px;
+      padding: 165px 90px 75px;
       @include breakpoint(medium){
         padding: 0;
       }

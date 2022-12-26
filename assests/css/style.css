@@ -13641,9 +13641,6 @@ h6 {
   /* site header */
   /* team section */
 }
-.about-page .site-header {
-  position: unset;
-}
 .about-page .site-header .site-wrapper {
   display: flex;
   justify-content: space-between;
@@ -13707,6 +13704,7 @@ h6 {
   font-size: 57px;
   color: #060606;
   font-family: 700;
+  padding: 165px 90px 75px;
 }
 .about-page .about-banner .common-background-blur-title {
   top: -100px;
@@ -13741,14 +13739,13 @@ h6 {
 }
 .services-page .site-header {
   background: #FFFFFF;
-  position: unset;
 }
 .services-page .service-section {
   background-color: #FFFFFF;
 }
 .services-page .service-section .service-heading {
   max-width: 750px;
-  padding: 75px 90px;
+  padding: 165px 90px 75px;
   /* Large Devices, Wide Screens */
 }
 @media (max-width: 991px) {
@@ -13817,7 +13814,7 @@ h6 {
   /* article-aside sections */
 }
 .blog-single .news-section .blog-article-title {
-  padding: 70px 200px;
+  padding: 165px 90px 75px;
   font-size: 57px;
   /* Large Devices, Wide Screens */
 }

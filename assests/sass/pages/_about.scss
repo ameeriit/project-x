@@ -3,7 +3,8 @@
 
   /* site header */
   .site-header {
-    position: unset;
+    
+   
     .site-wrapper {
       a {
         img {
@@ -81,6 +82,7 @@
       font-size: 57px;
       color: $black;
       font-family: 700;
+      padding: 165px 90px 75px;
     }
 
     .common-background-blur-title {
