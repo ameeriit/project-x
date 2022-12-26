@@ -130,18 +130,7 @@ $('.testimonial-content-slide-nav').slick({
 
 });
 
-/* hamburger */
 
-
-/* search modal popup */
-$(document).ready(function () {
-	$("#hide").click(function () {
-		$("p").hide();
-	});
-	$("#show").click(function () {
-		$("p").show();
-	});
-});
 
 
 /* hamburger */
@@ -153,7 +142,7 @@ $(document).ready(function () {
 // });
 
 jQuery(function ($) {
-	$('.menu-ham').click(function () {
+	$('.ham-menu').click(function () {
 		$('body').toggleClass('expand');
 		$(this).toggleClass('toggle');
 	})
