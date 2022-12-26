@@ -79,3 +79,24 @@
 }
 
 /* rows and col adjustments */
+
+/* search icons home */
+.secondary {
+  display: block;
+  border: 1px solid $black;
+  padding: 11px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 1;
+  font-size: 12px;
+  color: $black;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $white;
+    background-color: $dark-cerulean;
+    background: $dark-cerulean;
+    border: 1px solid $white;
+  }
+}

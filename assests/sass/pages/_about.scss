@@ -3,8 +3,8 @@
 
   /* site header */
   .site-header {
-    
-   
+    position: relative;
+    z-index: 1;
     .site-wrapper {
       a {
         img {
@@ -30,7 +30,6 @@
             display: flex;
             margin: 0;
 
-
             li {
               list-style-type: none;
               padding-right: 20px;
@@ -42,30 +41,14 @@
                 color: $black;
                 text-decoration: none;
                 cursor: pointer;
+                padding: 5px;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  color: $white;
+                  background-color: $dark-cerulean;
+                  border-radius: 5px;
+                }
               }
-            }
-          }
-        }
-
-
-        .search-bar {
-          .secondary {
-            display: block;
-            border: 1px solid $black;
-            padding: 11px;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            line-height: 1;
-            font-size: 12px;
-            color: $black;
-            transition: 0.3s ease-in-out;
-
-            &:hover {
-              color: $white;
-              background-color: $dark-cerulean;
-              background: $dark-cerulean;
-              border: 1px solid $white;
             }
           }
         }
@@ -78,15 +61,22 @@
     position: relative;
 
     h2 {
-      padding: 85px 75px;
       font-size: 57px;
       color: $black;
       font-family: 700;
       padding: 165px 90px 75px;
+      @include breakpoint(medium) {
+        padding: 0;
+        font-size: 40px;
+      }
+      @include breakpoint(extrasmall) {
+        
+        font-size: 20px;
+      }
     }
 
     .common-background-blur-title {
-      top: -100px;
+      top: -15px;
       right: 120px;
       z-index: -1;
     }

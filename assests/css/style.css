@@ -12842,34 +12842,114 @@ h6 {
 }
 
 /* rows and col adjustments */
-/* components */
-.about-page .site-header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-}
-.about-page .site-header .site-wrapper .main img {
-  filter: invert(0);
-}
-.about-page .site-header .site-wrapper .menu-search-wrapper .menu .menu-list li .main {
-  color: #FFFFFF;
-}
-.about-page .site-header .site-wrapper .menu-search-wrapper .search-bar .main {
+/* search icons home */
+.secondary {
   display: block;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #060606;
   padding: 11px;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   line-height: 1;
   font-size: 12px;
-  color: #FFFFFF;
+  color: #060606;
   transition: 0.3s ease-in-out;
 }
-.about-page .site-header .site-wrapper .menu-search-wrapper .search-bar .main:hover {
+.secondary:hover {
   color: #FFFFFF;
   background-color: #0F4C81;
   background: #0F4C81;
+  border: 1px solid #FFFFFF;
+}
+
+/* components */
+body.expand .site-main-header .site-main-wrapper .menu-search-wrapper .menu {
+  opacity: 1;
+  left: 0;
+}
+
+.site-main-header {
+  padding: 30px 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.site-main-header .site-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu-ham {
+  display: none;
+  /* Large Devices, Wide Screens */
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu-ham img {
+  width: 40px;
+}
+@media (max-width: 991px) {
+  .site-main-header .site-main-wrapper .menu-search-wrapper .menu-ham {
+    display: block;
+  }
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  background: linear-gradient(112.1deg, rgba(32, 38, 57, 0.95) 11.4%, rgba(63, 76, 119, 0.94) 70.2%);
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu ul {
+  display: flex;
+  margin: 0;
+  /* Large Devices, Wide Screens */
+}
+@media (max-width: 991px) {
+  .site-main-header .site-main-wrapper .menu-search-wrapper .menu ul {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu ul li {
+  list-style-type: none;
+  padding-left: 20px;
+  /* Large Devices, Wide Screens */
+}
+@media (max-width: 991px) {
+  .site-main-header .site-main-wrapper .menu-search-wrapper .menu ul li {
+    padding: 0 0 20px;
+  }
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu ul li a:hover {
+  color: #0F4C81;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .menu-ham {
+  position: absolute;
+  right: 200px;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .search-bar {
+  padding-left: 20px;
+}
+.site-main-header .site-main-wrapper .menu-search-wrapper .search-bar .secondary {
+  color: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
 
@@ -13641,6 +13721,10 @@ h6 {
   /* site header */
   /* team section */
 }
+.about-page .site-header {
+  position: relative;
+  z-index: 1;
+}
 .about-page .site-header .site-wrapper {
   display: flex;
   justify-content: space-between;
@@ -13677,37 +13761,38 @@ h6 {
   color: #060606;
   text-decoration: none;
   cursor: pointer;
-}
-.about-page .site-header .site-wrapper .menu-search-wrapper .search-bar .secondary {
-  display: block;
-  border: 1px solid #060606;
-  padding: 11px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  line-height: 1;
-  font-size: 12px;
-  color: #060606;
+  padding: 5px;
   transition: 0.3s ease-in-out;
 }
-.about-page .site-header .site-wrapper .menu-search-wrapper .search-bar .secondary:hover {
+.about-page .site-header .site-wrapper .menu-search-wrapper .menu .menu-list li a:hover {
   color: #FFFFFF;
   background-color: #0F4C81;
-  background: #0F4C81;
-  border: 1px solid #FFFFFF;
+  border-radius: 5px;
 }
 .about-page .about-banner {
   position: relative;
 }
 .about-page .about-banner h2 {
-  padding: 85px 75px;
   font-size: 57px;
   color: #060606;
   font-family: 700;
   padding: 165px 90px 75px;
+  /* Large Devices, Wide Screens */
+  /* Large Devices, Wide Screens */
+}
+@media (max-width: 991px) {
+  .about-page .about-banner h2 {
+    padding: 0;
+    font-size: 40px;
+  }
+}
+@media (max-width: 479px) {
+  .about-page .about-banner h2 {
+    font-size: 20px;
+  }
 }
 .about-page .about-banner .common-background-blur-title {
-  top: -100px;
+  top: -15px;
   right: 120px;
   z-index: -1;
 }
@@ -13826,7 +13911,6 @@ h6 {
 }
 .blog-single .news-section .common-background-blur-title {
   top: -25px;
-  z-index: -1;
 }
 .blog-single .news-section .article img {
   width: 100%;
@@ -14106,4 +14190,58 @@ h6 {
     margin-right: auto;
     margin-left: 0;
   }
+}
+
+.search {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #060606;
+  opacity: 0;
+}
+.search .search-see {
+  opacity: 1;
+  z-index: 1;
+}
+.search .search-top {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.search .search-top a {
+  color: white;
+}
+.search .search-top a i {
+  font-size: 40px;
+}
+.search .input-group {
+  display: flex;
+  padding: 250px 250px;
+}
+.search .input-group .form-control {
+  position: relative;
+  border-radius: 0;
+  padding: 20px;
+}
+.search .input-group a {
+  color: #060606;
+  position: absolute;
+  top: 270px;
+  right: 275px;
+}
+.search .input-group a i {
+  font-size: 30px;
+}
+.search .search-bottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.search .search-bottom p {
+  color: #FFFFFF;
+}
+.search .search-bottom a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

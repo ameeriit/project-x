@@ -33,37 +33,37 @@ $(".brands-wrapper").slick({
 	arrows: false,
 	responsive: [
 		{
-		  breakpoint: 1225,
-		  settings: {
-			slidesToShow: 4,
-			slidesToScroll: 1
-		  }
+			breakpoint: 1225,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
 		},
 		{
-		  breakpoint: 991,
-		  settings: {
-			slidesToShow: 3,
-			slidesToScroll: 1
-		  }
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
 		},
 		{
-		  breakpoint: 767,
-		  settings: {
-			slidesToShow: 2,
-			slidesToScroll: 1
-		  }
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
 		},
 		{
-		  breakpoint: 567,
-		  settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1
-		  }
+			breakpoint: 567,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
 		}
 		// You can unslick at a given breakpoint now by adding:
 		// settings: "unslick"
 		// instead of a settings object
-	  ]
+	]
 });
 
 /* swiper for cards slider service section */
@@ -75,27 +75,27 @@ const swiper = new Swiper('.swiper-container', {
 	spaceBetween: 30,
 	// Responsive breakpoints
 	breakpoints: {
-	  // when window width is >= 320px
-	  200: {
-		slidesPerView: 1,
-		spaceBetween: 5
-	  },
-	  320: {
-		slidesPerView: 1,
-		spaceBetween: 30
-	  },
-	  // when window width is >= 480px
-	  767: {
-		slidesPerView: 2,
-		spaceBetween: 30
-	  },
-	  // when window width is >= 640px
-	  991: {
-		slidesPerView: 3,
-		spaceBetween: 30
-	  }
+		// when window width is >= 320px
+		200: {
+			slidesPerView: 1,
+			spaceBetween: 5
+		},
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 30
+		},
+		// when window width is >= 480px
+		767: {
+			slidesPerView: 2,
+			spaceBetween: 30
+		},
+		// when window width is >= 640px
+		991: {
+			slidesPerView: 3,
+			spaceBetween: 30
+		}
 	}
-  })
+})
 
 /* magnific popup */
 $(document).ready(function () {
@@ -118,22 +118,44 @@ $('.testimonial-content-slide').slick({
 	arrows: false,
 	fade: true,
 	asNavFor: '.testimonial-content-slide-nav'
-  });
-  $('.testimonial-content-slide-nav').slick({
+});
+$('.testimonial-content-slide-nav').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	asNavFor: '.testimonial-content-slide',
 	dots: false,
 	arrows: false,
-	focusOnSelect: true
-  });
+	focusOnSelect: true,
+	centerMode: true,
 
-  /* hamburger */
-  $(document).ready(function(){
-	$(".header-right > a").click(function() {
-	  $(".hamburger-menu").addClass("active");
+});
+
+/* hamburger */
+
+
+/* search modal popup */
+$(document).ready(function () {
+	$("#hide").click(function () {
+		$("p").hide();
 	});
-	$(".close").click(function() {
-	  $(".hamburger-menu").removeClass("active");
+	$("#show").click(function () {
+		$("p").show();
 	});
-  });
+});
+
+
+/* hamburger */
+
+// $(document).ready(function () {
+// 	$(".menu-ham").click(function () {
+// 		$(".menu").toggleClass("intro");
+// 	});
+// });
+
+jQuery(function ($) {
+	$('.menu-ham').click(function () {
+		$('body').toggleClass('expand');
+		$(this).toggleClass('toggle');
+	})
+})
+
