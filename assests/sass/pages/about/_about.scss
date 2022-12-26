@@ -3,6 +3,7 @@
 
   /* site header */
   .site-header {
+    position: unset;
     .site-wrapper {
       a {
         img {
@@ -20,9 +21,14 @@
         align-items: center;
 
         .menu {
+          @include breakpoint(medium) {
+            display: none;
+          }
+
           .menu-list {
             display: flex;
             margin: 0;
+
 
             li {
               list-style-type: none;
@@ -34,6 +40,7 @@
                 text-transform: uppercase;
                 color: $black;
                 text-decoration: none;
+                cursor: pointer;
               }
             }
           }
@@ -56,7 +63,8 @@
             &:hover {
               color: $white;
               background-color: $dark-cerulean;
-              background: $dark-cerulean;border: 1px solid $white;
+              background: $dark-cerulean;
+              border: 1px solid $white;
             }
           }
         }

@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   color: $black;
   scroll-behavior: smooth;
+  @include breakpoint(smaller){
+    font-size: 12px;
+  }
 }
 
 h1 {

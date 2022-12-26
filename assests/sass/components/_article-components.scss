@@ -24,4 +24,8 @@
     display: block;
     width: fit-content;
     margin-left: auto;
+    @include breakpoint(medium){
+        margin-right: auto;
+        margin-left: 0;
+    }
 }

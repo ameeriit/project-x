@@ -31,14 +31,71 @@ $(".brands-wrapper").slick({
 	autoplay: true,
 	autoplaySpeed: 2000,
 	arrows: false,
+	responsive: [
+		{
+		  breakpoint: 1225,
+		  settings: {
+			slidesToShow: 4,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 3,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 567,
+		  settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		  }
+		}
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	  ]
 });
 
 /* swiper for cards slider service section */
-var swiper = new Swiper(".swiper-container", {
+
+
+const swiper = new Swiper('.swiper-container', {
+	// Default parameters
 	slidesPerView: 3,
 	spaceBetween: 30,
-});
-
+	// Responsive breakpoints
+	breakpoints: {
+	  // when window width is >= 320px
+	  200: {
+		slidesPerView: 1,
+		spaceBetween: 5
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 30
+	  },
+	  // when window width is >= 480px
+	  767: {
+		slidesPerView: 2,
+		spaceBetween: 30
+	  },
+	  // when window width is >= 640px
+	  991: {
+		slidesPerView: 3,
+		spaceBetween: 30
+	  }
+	}
+  })
 
 /* magnific popup */
 $(document).ready(function () {

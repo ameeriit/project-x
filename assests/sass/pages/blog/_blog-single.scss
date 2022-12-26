@@ -1,8 +1,46 @@
 .blog-single {
   background-color: $cultured;
 
+  @include breakpoint(medium) {
+    p {
+      font-size: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 14px;
+    }
+
+    a {
+      font-size: 12px;
+    }
+
+    article {
+      a {
+        font-size: 12px;
+      }
+    }
+    h6{
+      font-size: 12px;
+    }
+    h5{
+      font-size: 14px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    .placeholder{
+      font-size: 10px;
+    }
+  }
+
+
+
   /* site header */
-  
+
 
   .news-section {
 
@@ -10,6 +48,10 @@
     .blog-article-title {
       padding: 70px 200px;
       font-size: 57px;
+      @include breakpoint(medium){
+            padding: 0;
+            font-size: 30px;
+      }
     }
 
     .common-background-blur-title {
@@ -21,10 +63,12 @@
       img {
         width: 100%;
         margin-bottom: 40px;
+        
       }
 
       p {
         margin-bottom: 30px;
+
         a {
           color: $dim-gray;
           text-decoration: none;
@@ -74,10 +118,18 @@
       .contact-wrapper {
         .form-wrapper {
           margin: 0;
-
+          .field{
+              @include breakpoint(medium){
+                font-size: 10px;
+            
+            }
+          }
           .checkbox {
             margin-bottom: 20px;
             color: $dim-gray;
+            @include breakpoint(medium){
+              font-size: 12px;
+            }
           }
         }
       }
@@ -157,6 +209,9 @@
           a {
             text-decoration: none;
             color: $black;
+            @include breakpoint(medium){
+              font-size: 10px;
+            }
 
             &:first-child {
               padding-right: 15px;
@@ -166,7 +221,9 @@
               max-width: 70px;
               height: 70px;
               object-fit: cover;
-
+              @include breakpoint(medium){
+                max-width: 50px;
+              }
             }
 
           }
@@ -185,13 +242,16 @@
         .comments-list {
           margin-bottom: 20px;
           border-bottom: 1px solid $dim-gray;
-          &:last-child{
+
+          &:last-child {
             margin-bottom: 0;
             border: none;
           }
-          &:last-child p{
+
+          &:last-child p {
             margin: 0;
           }
+
           h6 {
             font-weight: 700;
             margin-bottom: 25px;
@@ -199,7 +259,9 @@
 
           p {
             font-size: 12.75px;
-        
+            @include breakpoint(medium){
+              font-size: 10px;
+            }
           }
         }
       }
@@ -207,6 +269,13 @@
       .tags {
         background-color: $white;
         padding: 30px;
+        >a{
+          @include breakpoint(medium){
+            display: flex;
+            margin-bottom: 10px;
+          }
+        }
+       
 
         h5 {
           margin-bottom: 20px;
@@ -214,6 +283,7 @@
 
         a {
           margin-right: 5px;
+          margin-bottom: 10px;
 
           &:last-child {
             margin-right: 0;

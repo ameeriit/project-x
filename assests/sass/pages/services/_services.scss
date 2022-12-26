@@ -3,14 +3,21 @@
   /* site header */
   .site-header {
     background: $white;
+    position: unset;
   }
   /* video section */
   .service-section {
     .service-heading {
       max-width: 750px;
       padding: 75px 90px;
+      @include breakpoint(medium){
+        padding: 0;
+      }
       h2 {
         font-size: 57px;
+        @include breakpoint(medium){
+          font-size: 30px;
+        }
       }
     }
     .common-background-blur-title {

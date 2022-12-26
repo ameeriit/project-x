@@ -19,6 +19,9 @@
   .how-it-works-card-wrapper {
     .rows {
       margin: 0;
+      @include breakpoint(medium){
+        margin: 0;
+      }
 
       .cols {
         padding: 0;

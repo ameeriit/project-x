@@ -9,12 +9,12 @@
 
       .rows {
         margin: 0;
+        @include breakpoint(medium){
+          margin: 0;
+        }
 
         .cols {
           padding: 0;
-        }
-        .cols-r {
-          padding: 0 0px 0px 25px;
         }
       }
 
@@ -35,6 +35,9 @@
           img {
             max-width: 100px;
             max-height: auto;
+            @include breakpoint(extrasmall){
+              max-width: 70px;
+            }
           }
 
           .signature-content {
@@ -72,6 +75,9 @@
         font-size: 14px;
         color: $black;
         font-weight: 700;
+        @include breakpoint(smaller){
+          font-size: 10px;
+        }
       }
 
       .nav-link {

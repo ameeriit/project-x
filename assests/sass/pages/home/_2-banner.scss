@@ -24,6 +24,9 @@
     .banner-content {
       margin: 0 100px;
       max-width: 550px;
+      @include breakpoint(small){
+            margin: 0;
+      }
 
       h1 {
         padding-bottom: 15px;

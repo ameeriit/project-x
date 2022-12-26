@@ -1,19 +1,27 @@
 .blog {
     background-color: $cultured;
 
-    
-    .blog-single{
-        .news-wrapper{
-            .mr-blog-bottom{
+
+    .blog-single {
+        .news-wrapper {
+            .rows {
+
+                margin-bottom: 60px;
+
+            }
+
+            .mr-blog-bottom {
                 padding-bottom: 115px;
             }
-            .article-cards{
-            margin-bottom: 50px;
+
+            .article-cards {
+                margin-bottom: 50px;
             }
-            a{
+
+            a {
                 display: inline-block;
             }
         }
     }
-    
+
 }

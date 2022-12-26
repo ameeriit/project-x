@@ -29,6 +29,15 @@
           max-width: 1100px;
           font-size: 24px;
           margin-left: 50px;
+          @include breakpoint(medium){
+            font-size: 20px;
+          }
+          @include breakpoint(small){
+            font-size: 16px;
+          }
+          @include breakpoint(extrasmall){
+            font-size: 12px;
+          }
         }
       }
     }

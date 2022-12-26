@@ -18,8 +18,14 @@
 
     .rows {
       margin: 0 -18px;
+      @include breakpoint(medium){
+        margin: 0;
+      }
       .cols {
         padding: 0 18px;
+        @include breakpoint(medium){
+          margin-bottom: 30px;
+        }
       }
     }
 
@@ -51,6 +57,10 @@
         left: -5px;
         color: #0f4c81;
         color: $dark-cerulean;
+        @include breakpoint(small){
+          top: -16px;
+          left: 0;
+        }
       }
 
       .rate {
@@ -58,6 +68,9 @@
         font-size: 60px;
         font-weight: 700;
         color: $dark-cerulean;
+        @include breakpoint(small){
+          font-size: 35px;
+        }
       }
     }
 
@@ -71,6 +84,9 @@
           justify-content: space-between;
           border-bottom: 1px solid #dad7d7;
           padding: 12px 0;
+          @include breakpoint(small){
+            padding: 5px 0;
+          }
 
           &:last-child {
             border-bottom: none;
