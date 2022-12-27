@@ -126,7 +126,7 @@ $('.testimonial-content-slide-nav').slick({
 	dots: false,
 	arrows: false,
 	focusOnSelect: true,
-	centerMode: true,
+	
 
 });
 
@@ -136,7 +136,7 @@ $('.testimonial-content-slide-nav').slick({
 /* hamburger */
 
 // $(document).ready(function () {
-// 	$(".menu-ham").click(function () {
+// 	$(".ham-menu").click(function () {
 // 		$(".menu").toggleClass("intro");
 // 	});
 // });
@@ -148,3 +148,12 @@ jQuery(function ($) {
 	})
 })
 
+
+/* search bar */
+function opensearch() {
+	document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closesearch() {
+	document.getElementById("myOverlay").style.display = "none";
+  }

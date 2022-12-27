@@ -10,28 +10,63 @@
 </head>
 
 <body>
-    <header class="site-main-header">
+    <header class="site-header">
         <div class="container">
-            <div class="site-main-wrapper">
-                <a class="main" href="/assests/index.html"><img src="/assests/img/Logo-main.png" alt="">
-                </a>
-                <div class="menu-search-wrapper">
-                    <nav class="menu">
-                        <ul class="menu-list">
-                            <li><a class="main" href="/assests/services.html">Service</a></li>
-                            <li><a class="main" href="/assests/about.html">About Us</a></li>
-                            <li><a class="main" href="/assests/blog-single.html">Team</a></li>
-                            <li><a class="main" href="/assests/blog.html">Pricing</a></li>
-                            <li><a class="main" href="">Testomonials</a></li>
-                            <li><a class="main" href="">News</a></li>
-                            <li><a class="main" href="">Contacts</a></li>
-                        </ul>
-                    </nav>
-                    <a class="menu-ham">
-                        <img src="/assests/img/ham.svg" alt="">
-                    </a>
-                    <div class="search-bar" id="">
-                        <a class="secondary" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="site-wrapper">
+                <div class="site-menux">
+                    <div class="logo">
+                        <a href="/assests/index.html"><img src="/assests/img/Logo-main.png" alt=""></a>
+                    </div>
+                    <div class="menu-search-bar">
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <li><a class="main" href="/assests/services.html">Services</a></li>
+                                <li><a class="main" href="/assests/about.html">About Us</a></li>
+                                <li><a class="main" href="/assests/blog-single.html">Team</a></li>
+                                <li><a class="main" href="/assests/blog.html">Pricing</a></li>
+                                <li><a class="main" href="">Testomonials</a></li>
+                                <li><a class="main" href="">News</a></li>
+                                <li><a class="main" href="">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closesearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <a type="submit"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </div>
+                        </div>
+
+                        <a class="openBtn" onclick="opensearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <div class="ham-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-bottom">
+                    <div class="location">
+                        <p>575 Crescent Avenue <br>
+                            PA 18951 <br>
+                            United Kingdom
+                        </p>
+                        <a href="tel:+432 533 12 523">+432 533 12 523</a> <br>
+                        <a href="mailto: info@domain.com">info@domain.com</a>
+                    </div>
+
+                    <div class="site-header-bottom">
+                        <p>&copy; 2020 Business Consulting Agency PSD Template By Adveits</p>
+                        <div class="language">
+                            <a href="">
+                                <h6 class="lang">ru</h6>
+                            </a>
+                            <a href="">
+                                <h6 class="lang">en</h6>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -757,6 +792,6 @@
     <script src="/assests/js/common/main.js"></script>
 
 
-</body>
+    </>
 
 </html>

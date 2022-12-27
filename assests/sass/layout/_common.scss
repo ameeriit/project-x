@@ -1,9 +1,7 @@
-
-
 .common-section-title {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $dark-cerulean;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark-cerulean;
 }
 
 .lang {
@@ -98,5 +96,45 @@
     background-color: $dark-cerulean;
     background: $dark-cerulean;
     border: 1px solid $white;
+  }
+}
+
+/* site-header  */
+.secondary-page {
+  .site-header {
+    .site-wrapper {
+      .site-menux {
+        img {
+          filter: invert(0);
+        }
+        .menu-search-bar {
+          .menu {
+            .menu-list {
+              li {
+                a {
+                  color: $white;
+                  &:hover {
+                    color: $white;
+                    background-color: $dark-cerulean;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.white-img {
+  img {
+    filter: invert(1);
+  }
+}
+
+.white-li {
+  a {
+    color: white;
   }
 }

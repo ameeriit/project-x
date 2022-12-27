@@ -1,7 +1,18 @@
 .blog {
     background-color: $cultured;
 
-
+    .site-header {
+        position: relative;
+        .site-wrapper {
+          .site-menux {
+            .logo {
+              img {
+                filter: invert(1);
+              }
+            }
+          }
+        }
+      }
     .blog-single {
         .news-wrapper {
             .rows {

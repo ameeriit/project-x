@@ -1,6 +1,18 @@
 .blog-single {
   background-color: $cultured;
 
+  .site-header {
+    position: relative;
+    .site-wrapper {
+      .site-menux {
+        .logo {
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
   @include breakpoint(medium) {
     p {
       font-size: 10px;

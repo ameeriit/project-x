@@ -1,60 +1,18 @@
 .about-page {
   background-color: $cultured;
-
-  /* site header */
   .site-header {
     position: relative;
-    z-index: 1;
     .site-wrapper {
-      a {
-        img {
-          filter: invert(1);
-        }
-      }
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 0;
-
-      .menu-search-wrapper {
-        display: flex;
-        align-items: center;
-
-        .menu {
-          @include breakpoint(medium) {
-            display: none;
-          }
-
-          .menu-list {
-            display: flex;
-            margin: 0;
-
-            li {
-              list-style-type: none;
-              padding-right: 20px;
-
-              a {
-                font-size: 14px;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: $black;
-                text-decoration: none;
-                cursor: pointer;
-                padding: 5px;
-                transition: 0.3s ease-in-out;
-                &:hover {
-                  color: $white;
-                  background-color: $dark-cerulean;
-                  border-radius: 5px;
-                }
-              }
-            }
+      .site-menux {
+        .logo {
+          img {
+            filter: invert(1);
           }
         }
       }
     }
   }
+  /* site header */
 
   /* site header */
   .about-banner {
@@ -70,7 +28,6 @@
         font-size: 40px;
       }
       @include breakpoint(extrasmall) {
-        
         font-size: 20px;
       }
     }
