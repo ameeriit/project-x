@@ -44,3 +44,13 @@
     }
   }
 }
+
+.swiper{
+  z-index: auto;
+}
+.swiper-wrapper{
+  z-index: auto;
+}
+.swiper-button-prev, .swiper-button-next {
+  z-index: auto;
+}

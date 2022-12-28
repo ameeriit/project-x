@@ -125,16 +125,20 @@ jQuery(function ($) {
 
 
 /* search bar */
-function opensearch() {
-	document.getElementById("myOverlay").style.display = "block";
-	document.getElementById('body').style.overflow = "hidden";
-	
-}
+// function opensearch() {
+// 	document.getElementById("myOverlay").style.display = "block";
+// }
 
-function closesearch() {
-	document.getElementById("myOverlay").style.display = "none";
-	document.getElementById('body').style.overflow = "visible";
-}
+// function closesearch() {
+// 	document.getElementById("myOverlay").style.display = "none";
+// }
 
 
 /* scroll to bottom section */
+
+jQuery(function ($) {
+	$('.search-btn').click(function () {
+		$('.search').toggleClass('search-open-close');
+		$(this).toggleClass('toggle');
+	})
+})

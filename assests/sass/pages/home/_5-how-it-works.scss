@@ -4,12 +4,8 @@
 
   .how-it-works-wrapper {
     .how-it-works-img-wrapper {
-      max-width: 100%;
-      position: relative;
-      z-index: 2;
-
       img {
-        @include inherit-img;
+       width: 100%;
       }
     }
   }
