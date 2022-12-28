@@ -1,6 +1,6 @@
 .about-section {
   background-color: $cultured;
-
+  margin-bottom: 115px;
   .about-wrapper {
     position: relative;
 
@@ -9,7 +9,7 @@
 
       .rows {
         margin: 0;
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
           margin: 0;
         }
 
@@ -20,7 +20,8 @@
 
       .tab-wrapper {
         h2 {
-          padding-bottom: 24px;
+          font-size: 31px;
+          margin-bottom: 16px;
         }
 
         .common-section-heading {
@@ -35,7 +36,7 @@
           img {
             max-width: 100px;
             max-height: auto;
-            @include breakpoint(extrasmall){
+            @include breakpoint(extrasmall) {
               max-width: 70px;
             }
           }
@@ -53,8 +54,7 @@
 
       .about-paragraph {
         p {
-          padding-bottom: 15px;
-
+          font-size: 15.25px;
           &:last-child {
             padding-bottom: 0;
           }
@@ -64,18 +64,14 @@
   }
 
   .tab-list-wrapper {
-    padding: 0 0 1px;
-
     .nav {
-      justify-content: center;
-
       a {
         cursor: pointer;
-        padding: 35px 40px;
         font-size: 14px;
         color: $black;
         font-weight: 700;
-        @include breakpoint(smaller){
+        background: none;
+        @include breakpoint(smaller) {
           font-size: 10px;
         }
       }
@@ -87,7 +83,8 @@
     }
 
     .nav-tabs {
-      border-top: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+      border-top: var(--bs-nav-tabs-border-width) solid
+        var(--bs-nav-tabs-border-color);
       border-bottom: 0;
     }
   }

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', sans-serif;
     src: url('/assests/font/DMSans-Bold.woff2') format('woff2'),
         url('/assests/font/DMSans-Bold.woff') format('woff');
     font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('/assests/font/Poppins-Bold.woff2') format('woff2'),
         url('/assests/font/Poppins-Bold.woff') format('woff');
     font-weight: bold;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('/assests/font/Poppins-Regular.woff2') format('woff2'),
         url('/assests/font/Poppins-Regular.woff') format('woff');
     font-weight: normal;

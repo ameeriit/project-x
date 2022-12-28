@@ -30,9 +30,35 @@
                                     <li><a class="main" href="">Contacts</a></li>
                                 </ul>
                             </div>
-                            <div class="search">
-                                <a class="search-here" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <div id="myOverlay" class="overlay">
+                                <div class="container">
+                                    <div class="overlay-wrapper">
+                                        <div class="search-top">
+                                            <a href=""><img src="/assests/img/Logo.png" alt=""></a>
+                                            <a class="closebtn" onclick="closesearch()" title="Close Overlay"><i
+                                                    class="fa-solid fa-xmark"></i></a>
+                                        </div>
+                                        <div class="overlay-content">
+                                            <form action="/action_page.php">
+                                                <input type="text" placeholder="Search.." name="search">
+                                                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </form>
+                                        </div>
+                                        <div class="search-bottom">
+                                            <p>&copy; 2020 Business Consulting Agency PSD Template By Adveits</p>
+                                            <div class="language">
+                                                <a href="">
+                                                    <h6 class="lang">ru</h6>
+                                                </a>
+                                                <a href="">
+                                                    <h6 class="lang">en</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <a class="openbtn" onclick="opensearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
                             <div class="ham-menu">
                                 <span></span>
                                 <span></span>

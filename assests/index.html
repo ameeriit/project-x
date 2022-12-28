@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="/assests/css/style.css">
 </head>
 
-<body>
+<body id="body">
     <header class="site-header">
+        <a id="scroll-top"></a>
         <div class="container">
             <div class="site-wrapper">
                 <div class="site-menux">
@@ -30,16 +31,34 @@
                             </ul>
                         </div>
                         <div id="myOverlay" class="overlay">
-                            <span class="closebtn" onclick="closesearch()" title="Close Overlay">×</span>
-                            <div class="overlay-content">
-                                <form action="/action_page.php">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <a type="submit"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                </form>
+                            <div class="container">
+                                <div class="overlay-wrapper">
+                                    <div class="search-top">
+                                        <a href=""><img src="/assests/img/Logo.png" alt=""></a>
+                                        <a class="closebtn" onclick="closesearch()" title="Close Overlay"><i
+                                                class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <form action="/action_page.php">
+                                            <input type="text" placeholder="Search.." name="search">
+                                            <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </form>
+                                    </div>
+                                    <div class="search-bottom">
+                                        <p>&copy; 2020 Business Consulting Agency PSD Template By Adveits</p>
+                                        <div class="language">
+                                            <a href="">
+                                                <h6 class="lang">ru</h6>
+                                            </a>
+                                            <a href="">
+                                                <h6 class="lang">en</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <a class="openBtn" onclick="opensearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="openbtn" onclick="opensearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <div class="ham-menu">
                             <span></span>
                             <span></span>
@@ -59,19 +78,12 @@
 
                     <div class="site-header-bottom">
                         <p>&copy; 2020 Business Consulting Agency PSD Template By Adveits</p>
-                        <div class="language">
-                            <a href="">
-                                <h6 class="lang">ru</h6>
-                            </a>
-                            <a href="">
-                                <h6 class="lang">en</h6>
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </header><!-- header section -->
 
     <section class="banner-section">
         <div class="banner-img">
@@ -87,7 +99,8 @@
                     <a class="male-bl-button" href="">Learn More</a>
                 </div><!-- banner content -->
                 <div class="banner-utility">
-                    <a class="smooth-link-top" href="#demo"><img src="/assests/img/Arrow_down.png" alt="arrow.img"></a>
+                    <a class="scroll-bottom" href="#scroll-bottom"><img src="/assests/img/Arrow_down.png"
+                            alt="arrow.img"></a>
                     <div class="language">
                         <a href="">
                             <h6 class="lang">ru</h6>
@@ -102,6 +115,7 @@
     </section><!-- banner section -->
 
     <section class="services-section">
+        <a id="scroll-bottom"></a>
         <div class="container">
             <div class="swiper-container swiper">
                 <div class="swiper-wrapper">
@@ -148,8 +162,8 @@
                         <div class="feature-services">
                             <img class="service-img" src="/assests/img/horse-icon.png" alt="icon.img">
                             <h5>Stragtegic Planning</h5>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                prasentium.</p>
+                            <p>Strategic planning is the process of documenting and establishing a direction of your
+                                business</p>
                             <div class="service-bottom">
                                 <a class="read-more-arrow" href=""> <img src="/assests/img/Arrow_read_more.png"
                                         alt="arrow.img"></a>
@@ -159,10 +173,10 @@
                     </div><!-- swiper slide -->
                     <div class="swiper-slide">
                         <div class="feature-services">
-                            <img src="/assests/img/horse-icon.png" alt="icon.img">
-                            <h5>Stragtegic Planning</h5>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                prasentium.</p>
+                            <img class="service-img" src="/assests/img/human-with-crown.png" alt="icon.img">
+                            <h5>Consulting & Marketing</h5>
+                            <p>A marketing consultant is an advisor who works with companies to create and implement
+                                marketing strategies.</p>
                             <div class="service-bottom">
                                 <a class="read-more-arrow" href=""> <img src="/assests/img/Arrow_read_more.png"
                                         alt="arrow.img"></a>
@@ -170,14 +184,18 @@
                             </div>
                         </div><!-- feature service -->
                     </div><!-- swiper slide -->
+
                 </div><!-- swiper wrapper -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div><!-- swiper container -->
             <div class="swiper-pagination"></div>
         </div><!-- container -->
+
     </section><!-- service section -->
 
     <section class="about-section">
-        <a name="demo-top"></a>
+
         <div class="container">
             <div class="about-wrapper">
                 <div class="tab-content" id="myTabContent">
@@ -186,7 +204,7 @@
                         <div class="about-tab-wrapper">
                             <h6 class="common-section-title">About Us</h6>
                             <div class="row rows">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div class="tab-wrapper">
                                         <h2>Keep Your Business Safe & Ensure High
                                             Availability</h2>
@@ -199,7 +217,7 @@
                                         </div><!-- about signature box -->
                                     </div><!-- tab wrapper -->
                                 </div><!-- col -->
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols-r">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div class="about-paragraph">
                                         <p>A business consulting agency is involved in the planning, implementation,
                                             and
@@ -220,7 +238,7 @@
                         <div class="about-tab-wrapper">
                             <h6 class="common-section-title">About Us</h6>
                             <div class="row rows">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div class="tab-wrapper">
                                         <h2>Keep Your Business Safe & Ensure High
                                             Availability</h2>
@@ -233,7 +251,7 @@
                                         </div><!-- about signature box -->
                                     </div><!-- tab wrapper -->
                                 </div><!-- col -->
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols-r">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <p>A business consulting agency is involved in the planning, implementation,
                                         and
                                         education of businesses. We work directly with business owners on
@@ -252,7 +270,7 @@
                         <div class="about-tab-wrapper">
                             <h6 class="common-section-title">About Us</h6>
                             <div class="row rows">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div class="tab-wrapper">
                                         <h2>Keep Your Business Safe & Ensure High
                                             Availability</h2>
@@ -265,7 +283,7 @@
                                         </div><!-- about signature box -->
                                     </div><!-- tab wrapper -->
                                 </div><!-- col -->
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12 cols-r">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                     <p>A business consulting agency is involved in the planning, implementation,
                                         and
                                         education of businesses. We work directly with business owners on
@@ -409,9 +427,7 @@
                         <div class="team-members">
                             <div class="team-member-img">
                                 <img src="/assests/img/ceo.jpg" alt="team.img">
-                                <div class="team-card-title">
-                                    <h6>CEO</h6>
-                                </div><!-- team card title -->
+                                <h6 class="team-card-title">CEO</h6>
                             </div><!-- team member img -->
                             <h4>Tom Henders</h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -429,9 +445,7 @@
                         <div class="team-members">
                             <div class="team-member-img">
                                 <img src="/assests/img/business-analyst.jpg" alt="team.img">
-                                <div class="team-card-title">
-                                    <h6>Business Analytic</h6>
-                                </div><!-- team card title -->
+                                <h6 class="team-card-title">Business Analytic</h6>
                             </div><!-- team member img -->
                             <h4>Andrew Mike</h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -449,9 +463,7 @@
                         <div class="team-members">
                             <div class="team-member-img">
                                 <img src="/assests/img/marketing-agent.jpg" alt="team.img">
-                                <div class="team-card-title">
-                                    <h6>Marketing Agent</h6>
-                                </div><!-- team card title -->
+                                <h6 class="team-card-title">Marketing Agent</h6>
                             </div><!-- team member img -->
                             <h4>Rosie Ford</h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -490,11 +502,11 @@
                             </div><!-- price -->
                             <div class="price-plans">
                                 <ul>
-                                    <li>Branding <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>20 hours of consultant <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>15 hours of theory <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Skype video call <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Support 24/7 <img src="/assests/img/check.svg" alt="check.img"></li>
+                                    <li>Branding <i class="fa-solid fa-check"></i></li>
+                                    <li>20 hours of consultant <i class="fa-solid fa-check"></i></li>
+                                    <li>15 hours of theory <i class="fa-solid fa-check"></i></li>
+                                    <li>Skype video call <i class="fa-solid fa-check"></i></li>
+                                    <li>Support 24/7 <i class="fa-solid fa-check"></i></li>
                                 </ul>
                             </div><!-- price plans -->
                             <a class="male-bl-button wh" href="">Choose Plan</a>
@@ -511,11 +523,11 @@
                             </div><!-- price -->
                             <div class="price-plans">
                                 <ul>
-                                    <li>Branding <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>20 hours of consultant <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>15 hours of theory <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Skype video call <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Support 24/7 <img src="/assests/img/check.svg" alt="check.img"></li>
+                                    <li>Branding <i class="fa-solid fa-check"></i></li>
+                                    <li>20 hours of consultant <i class="fa-solid fa-check"></i></li>
+                                    <li>15 hours of theory <i class="fa-solid fa-check"></i></li>
+                                    <li>Skype video call <i class="fa-solid fa-check"></i></li>
+                                    <li>Support 24/7 <i class="fa-solid fa-check"></i></li>
                                 </ul>
                             </div><!-- price plans -->
                             <a class="male-bl-button wh" href="">Choose Plan</a>
@@ -532,11 +544,11 @@
                             </div><!-- price -->
                             <div class="price-plans">
                                 <ul>
-                                    <li>Branding <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>20 hours of consultant <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>15 hours of theory <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Skype video call <img src="/assests/img/check.svg" alt="check.img"></li>
-                                    <li>Support 24/7 <img src="/assests/img/check.svg" alt="check.img"></li>
+                                    <li>Branding <i class="fa-solid fa-check"></i></li>
+                                    <li>20 hours of consultant <i class="fa-solid fa-check"></i></li>
+                                    <li>15 hours of theory <i class="fa-solid fa-check"></i></li>
+                                    <li>Skype video call <i class="fa-solid fa-check"></i></li>
+                                    <li>Support 24/7 <i class="fa-solid fa-check"></i></i></li>
                                 </ul>
                             </div><!-- price plans -->
                             <a class="male-bl-button wh" href="">Choose Plan</a>
@@ -550,28 +562,28 @@
     <section class="brands-section">
         <div class="container">
             <div class="brands-wrapper">
-                <div>
+                <div class="brands">
                     <img src="/assests/img/balkan.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/adveits.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/swiger.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/mandala.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/balkan.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/adveits.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/swiger.png" alt="brand.img">
                 </div>
-                <div>
+                <div class="brands">
                     <img src="/assests/img/mandala.png" alt="brand.img">
                 </div>
             </div><!-- brands wrapper -->
@@ -642,7 +654,7 @@
             <span>News</span>
         </div>
         <div class="container">
-            <a name="demo-bottom"></a>
+
             <div class="article-wrapper">
                 <h6 class="common-section-title">New Article</h6>
                 <h2>Check Our Latest Blog Posts</h2>
@@ -652,9 +664,11 @@
                             <div class="article-img">
                                 <img src="/assests/img/article-8.jpg" alt="article.img">
                             </div><!-- article img -->
-                            <h5 class="article-card-title">
-                                5 Amazing and Easy Tips for Sustainable Business Success
-                            </h5>
+                            <a href="">
+                                <h5 class="article-card-title">
+                                    5 Amazing and Easy Tips for Sustainable Business Success
+                                </h5>
+                            </a>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
                             <a class="article-arrow" href=""> <img src="/assests/img/Arrow_read_more.png"
                                     alt="arrow.img"></a>
@@ -665,9 +679,11 @@
                             <div class="article-img">
                                 <img src="/assests/img/article-9.jpg" alt="article.img">
                             </div><!-- article img -->
-                            <h5 class="article-card-title">
-                                5 Amazing and Easy Tips for Sustainable Business Success
-                            </h5>
+                            <a href="">
+                                <h5 class="article-card-title">
+                                    5 Amazing and Easy Tips for Sustainable Business Success
+                                </h5>
+                            </a>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
                             <a class="article-arrow" href=""><img src="/assests/img/Arrow_read_more.png"
                                     alt="arrow.img"></a>
@@ -678,9 +694,11 @@
                             <div class="article-img">
                                 <img src="/assests/img/article-5.jpg" alt="article.img">
                             </div><!-- article img -->
-                            <h5 class="article-card-title">
-                                5 Amazing and Easy Tips for Sustainable Business Success
-                            </h5>
+                            <a href="">
+                                <h5 class="article-card-title">
+                                    5 Amazing and Easy Tips for Sustainable Business Success
+                                </h5>
+                            </a>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducims…</p>
                             <a class="article-arrow" href=""> <img src="/assests/img/Arrow_read_more.png"
                                     alt="arrow.img"></a>
@@ -688,7 +706,7 @@
                     </div><!-- col -->
                 </div><!-- row -->
                 <div class="lr-more">
-                    <a class="male-bl-button wh" href="">Learn More</a>
+                    <a class="male-bl-button wh" href="">View All Posts</a>
                 </div>
             </div><!-- article-wrapper -->
         </div><!-- container -->
@@ -710,14 +728,14 @@
                             <h4>
                                 Location
                             </h4>
-                            <p>Location: 575 Crescent Avenue Quakertown, PA 18951</p>
+                            <p>Location: 575 Crescent Avenue<br> Quakertown, PA 18951</p>
                         </div><!-- contact card wrapper -->
                     </div><!-- col -->
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 cols">
                         <div class="contact-card-wrapper">
                             <img src="/assests/img/call.png" alt="call.img">
                             <h4>
-                                Location
+                                Phone no.
                             </h4>
                             <a href="tel:+6494461709">Mobile: +432 533 12 523</a>
                             <br>
@@ -728,7 +746,7 @@
                         <div class="contact-card-wrapper">
                             <img src="/assests/img/email.png" alt="email.img">
                             <h4>
-                                Location
+                                E-mail
                             </h4>
                             <a href="mailto:m.bluth@example.com">Info: info@domain.com</a>
                             <br>
@@ -759,10 +777,11 @@
                             <a class="male-bl-button wh" href="">Send Message</a>
                         </form>
                     </div><!-- row -->
-                    <a class="smooth-link-bottom scroll-top" href="#demo-bottom"><img src="/assests/img/scroll top.png"
-                            alt="scroll-top.img"></a>
+
                 </div><!-- form wrapper -->
+
             </div><!-- contact wrapper -->
+            <a class="scroll-top" href="#scroll-top"><img src="/assests/img/scroll top.png" alt="scroll-top.img"></a>
         </div><!-- container -->
     </section><!-- contact section -->
 

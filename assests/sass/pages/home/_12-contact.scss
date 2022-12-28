@@ -15,23 +15,22 @@
 
     .rows {
       margin: 0 -18px;
-      @include breakpoint(medium){
+      @include breakpoint(medium) {
         margin: 0;
       }
       .cols {
-          padding: 0 18px;
-          @include breakpoint(medium){
-            margin-bottom: 30px;
-          }
+        padding: 0 18px;
+        @include breakpoint(medium) {
+          margin-bottom: 30px;
+        }
       }
-  }
+    }
 
     .contact-card-wrapper {
       height: 100%;
       background: white;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       padding: 30px 35px;
-
 
       img {
         padding-bottom: 18px;
@@ -48,12 +47,8 @@
       a {
         color: $dim-gray;
         text-decoration: none;
-
       }
     }
-
-
-
 
     .form-wrapper {
       position: relative;
@@ -84,24 +79,18 @@
         padding-bottom: 20px;
       }
 
-      
-
       .wh {
         display: block;
         width: fit-content;
       }
-
-    }
-
-    .scroll-top {
-      display: block;
-      width: fit-content;
-      margin-left: auto;
-    }
-    img{
-      @include tr-sc;
     }
   }
-
-
+  .scroll-top {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+  img {
+    @include tr-sc;
+  }
 }

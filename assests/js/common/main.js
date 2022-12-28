@@ -1,28 +1,3 @@
-/* hamburger menu */
-
-// jQuery(function ($) {
-//     $('.menu-btn').click(function () {
-//         $(this).toggleClass('open');
-//         $('.menu-list').toggleClass('expand');
-//     });
-// });
-
-
-/* smooth scrolling for button js */
-function scrollToAnchor(aid) {
-	const destination = $("a[name='" + aid + "']");
-	$('html,body').animate({
-		scrollTop: destination.offset().top
-	}, 'slow');
-}
-
-$(document).on('click', '.smooth-link-top', function () {
-	scrollToAnchor('demo-top');
-})
-$(document).on('click', '.smooth-link-bottom', function () {
-	scrollToAnchor('demo-bottom');
-})
-
 /* slick for brands slider brand section*/
 
 $(".brands-wrapper").slick({
@@ -35,29 +10,25 @@ $(".brands-wrapper").slick({
 		{
 			breakpoint: 1225,
 			settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1
+				slidesToShow: 4
 			}
 		},
 		{
 			breakpoint: 991,
 			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
+				slidesToShow: 3
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1
+				slidesToShow: 2
 			}
 		},
 		{
 			breakpoint: 567,
 			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToShow: 1
 			}
 		}
 		// You can unslick at a given breakpoint now by adding:
@@ -73,6 +44,10 @@ const swiper = new Swiper('.swiper-container', {
 	// Default parameters
 	slidesPerView: 3,
 	spaceBetween: 30,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 	// Responsive breakpoints
 	breakpoints: {
 		// when window width is >= 320px
@@ -126,7 +101,7 @@ $('.testimonial-content-slide-nav').slick({
 	dots: false,
 	arrows: false,
 	focusOnSelect: true,
-	
+
 
 });
 
@@ -152,8 +127,14 @@ jQuery(function ($) {
 /* search bar */
 function opensearch() {
 	document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function closesearch() {
+	document.getElementById('body').style.overflow = "hidden";
+	
+}
+
+function closesearch() {
 	document.getElementById("myOverlay").style.display = "none";
-  }
+	document.getElementById('body').style.overflow = "visible";
+}
+
+
+/* scroll to bottom section */

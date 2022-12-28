@@ -9,6 +9,14 @@
             filter: invert(1);
           }
         }
+        .openbtn {
+          background-color: $dark-cerulean;
+          color: white;
+          &:hover{
+            background-color: black;
+            color: white;
+          }
+        }
       }
     }
   }

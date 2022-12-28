@@ -17,7 +17,6 @@
     }
   }
 
-
   h2 {
     max-width: 450px;
   }
@@ -37,7 +36,6 @@
       }
     }
 
-
     .team-members {
       height: 100%;
 
@@ -46,7 +44,6 @@
         max-width: 100%;
 
         margin-bottom: 16px;
-
 
         &:hover .team-card-title {
           opacity: 1;
@@ -60,16 +57,15 @@
 
         .team-card-title {
           position: absolute;
-          width: 100%;
           bottom: 18px;
           left: 18px;
-          max-width: 160px;
           padding: 12px;
           text-align: center;
           background-color: $dark-cerulean;
           transition: 0.3s ease-in-out;
           color: white;
           opacity: 0;
+          margin: 0;
 
           @include breakpoint(smaller) {
             max-width: 110px;

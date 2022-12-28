@@ -76,7 +76,7 @@ body {
         align-items: center;
         .menu {
           ul {
-            
+            padding: 0 10px;
             margin: 0;
             right: -150px;
             display: flex;
@@ -87,15 +87,15 @@ body {
             }
             li {
               list-style-type: none;
-              padding-left: 20px;
+              padding: 0 5px;
 
               a {
                 text-decoration: none;
                 color: $white;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 12px;
                 padding: 5px;
-                border-radius: 5px;
+                text-transform: uppercase;
                 @include breakpoint(medium) {
                   font-size: 12px;
                 }
@@ -107,48 +107,9 @@ body {
             }
           }
         }
-        .overlay{
-          display: none;
-        }
-        .openBtn{
-          display: block;
-          background: $white;
-          border-radius: 50%;
-          padding: 10px;
-          line-height: 1;
-          color: $black;
-          &:hover {
-            color: $white;
-            background-color: $dark-cerulean;
-          }
-        }
-        // .search {
-        //   padding-left: 10px;
-        //   .search-here {
-        //     display: block;
-        //     background: white;
-        //     border-radius: 50%;
-        //     padding: 10px;
-        //     line-height: 1;
-        //     color: $black;
-        //     &:hover {
-        //       color: $white;
-        //       background-color: $dark-cerulean;
-        //     }
-        //   }
-        //   input{
-        //     display: none;
-        //   }
-        // }
         .ham-menu {
-          margin-left: 10px;
           display: none;
-          background: $white;
-
-          padding: 8px;
-          border-radius: 50%;
           span {
-            display: block;
             background-color: $black;
             width: 20px;
             height: 2px;
@@ -158,7 +119,16 @@ body {
             }
           }
           @include breakpoint(medium) {
-            display: block;
+            margin-left: 10px;
+            background: $white;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
           }
         }
       }
@@ -191,70 +161,4 @@ body {
       }
     }
   }
-}
-
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
-}
-
-/* The content */
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  text-align: center;
-  margin-top: 30px;
-  margin: auto;
-}
-
-/* Close button */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-/* Style the search field */
-.overlay input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: white;
-}
-
-.overlay input[type=text]:hover {
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay button:hover {
-  background: #bbb;
 }

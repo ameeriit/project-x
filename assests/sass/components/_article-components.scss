@@ -1,7 +1,4 @@
-
-
 .article-cards {
-
     .article-img {
         margin-bottom: 25px;
         height: 250px;
@@ -12,6 +9,10 @@
             object-fit: cover;
         }
     }
+    a{
+        color: $black;
+        text-decoration: none
+    }
 
     .article-arrow {
         img {
@@ -21,9 +22,10 @@
 }
 
 .lr-more {
-    display: block;
+    display: flex;
     width: fit-content;
     margin-left: auto;
+    margin-top: 45px;
     @include breakpoint(medium){
         margin-right: auto;
         margin-left: 0;
