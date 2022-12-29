@@ -1,0 +1,70 @@
+.pricing-card {
+    height: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px 25px;
+    background-color: $white;
+    text-align: center;
+    @include tr-sc;
+
+    h4 {
+      padding-bottom: 2px;
+    }
+
+    h6 {
+      color: $dim-gray;
+    }
+
+    .price {
+      padding-bottom: 25px;
+    }
+
+    .subscript {
+      position: relative;
+      top: -32px;
+      font-size: 15px;
+      left: -5px;
+      color: #0f4c81;
+      color: $dark-cerulean;
+      font-weight: 500;
+      @include breakpoint(small) {
+        top: -16px;
+        left: 0;
+      }
+    }
+
+    .rate {
+      position: relative;
+      font-size: 60px;
+      font-weight: 700;
+      color: $dark-cerulean;
+      @include breakpoint(small) {
+        font-size: 35px;
+      }
+    }
+
+    .price-plans {
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          color: $dim-gray;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #dad7d7;
+          padding: 12px 0;
+          i {
+            color: $dark-cerulean;
+          }
+          @include breakpoint(small) {
+            padding: 5px 0;
+          }
+
+          &:last-child {
+            border-bottom: none;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }

@@ -1,3 +1,5 @@
+/* main heading button */
+
 .male-bl-button {
   color: $white;
   font-size: 11px;
@@ -24,6 +26,7 @@
   }
 }
 
+/* border radius */
 .br{
   padding: 8px 16px;
 }
@@ -41,4 +44,72 @@
     background-color: $dark-cerulean;
     color: $white;
   }
+}
+
+
+/* learn more button */
+.lr-more {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 45px;
+  @include breakpoint(medium){
+      margin-right: auto;
+      margin-left: 0;
+  }
+}
+
+
+/* search cross button */
+.cross-btn {
+  position: relative;
+  z-index: 5;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  right: 0px;
+  top: 0;
+  &:hover {
+    color: white;
+    background-color: $dark-cerulean;
+  }
+}
+
+/* search button header */
+
+.search-btn {
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  color: $white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid $white;
+
+  right: 0;
+  top: 0;
+
+  &:hover {
+    color: white;
+    background-color: $dark-cerulean;
+  }
+}
+
+/* white search button */
+
+.srch-wh{
+  border: 1px solid $black;
+  color: $black;
 }

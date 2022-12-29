@@ -20,14 +20,3 @@
         }
     }
 }
-
-.lr-more {
-    display: flex;
-    width: fit-content;
-    margin-left: auto;
-    margin-top: 45px;
-    @include breakpoint(medium){
-        margin-right: auto;
-        margin-left: 0;
-    }
-}

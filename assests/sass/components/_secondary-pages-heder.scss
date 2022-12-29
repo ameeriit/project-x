@@ -1,0 +1,31 @@
+/* site-header  */
+.secondary-page {
+  .site-header {
+    .site-wrapper {
+      .site-menux {
+        img {
+          filter: invert(0);
+        }
+
+        .menu-search-bar {
+          .menu {
+            .menu-list {
+              li {
+                a {
+                  color: $black;
+                  @include breakpoint(medium) {
+                    color: $white;
+                  }
+                  &:hover {
+                    color: $white;
+                    background-color: $dark-cerulean;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
